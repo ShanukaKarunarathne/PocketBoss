@@ -1,4 +1,6 @@
-from flask import Flask, render_template, request, redirect, url_for, jsonify, flash
+from flask import Flask, render_template, request, redirect, url_for, jsonify, flash, session
+from werkzeug.security import check_password_hash
+from functools import wraps
 from datetime import datetime
 import json
 import os
@@ -11,6 +13,31 @@ app.secret_key = 'your_secret_key_here'  # Add a secret key for flash messages
 INVENTORY_FILE = 'inventory.json'
 SALES_FOLDER = 'sales'
 EXPENSES_FOLDER = 'expenses'
+USERS_FILE = 'users.json'
+
+# User Authentication Functions
+def load_users():
+    if os.path.exists(USERS_FILE):
+        with open(USERS_FILE, 'r') as f:
+            return json.load(f)
+    return []
+
+def verify_password(username, password):
+    users = load_users()
+    user = next((u for u in users if u['username'] == username), None)
+    if user and check_password_hash(user['password_hash'], password):
+        return user
+    return None
+
+# Login Required Decorator
+def login_required(f):
+    @wraps(f)
+    def decorated_function(*args, **kwargs):
+        if 'user' not in session:
+            flash('Please log in to access this page.', 'warning')
+            return redirect(url_for('login'))
+        return f(*args, **kwargs)
+    return decorated_function
 
 # Ensure folders exist
 def ensure_folders_exist():
@@ -205,7 +232,29 @@ def return_items_to_inventory(sale):
     
     save_inventory(inventory_data)
 
+# Login and Logout Routes
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    if request.method == 'POST':
+        username = request.form['username']
+        password = request.form['password']
+        user = verify_password(username, password)
+        if user:
+            session['user'] = user['username']
+            flash('Login successful!', 'success')
+            return redirect(url_for('index'))
+        else:
+            flash('Invalid username or password.', 'danger')
+    return render_template('login.html')
+
+@app.route('/logout')
+def logout():
+    session.pop('user', None)
+    flash('You have been logged out.', 'info')
+    return redirect(url_for('login'))
+
 @app.route('/')
+@login_required
 def index():
     ensure_folders_exist()
     
@@ -236,12 +285,14 @@ def index():
                            low_stock=low_stock)
 
 @app.route('/inventory')
+@login_required
 def inventory():
     ensure_folders_exist()
     inventory_data = load_inventory()
     return render_template('inventory.html', inventory=inventory_data['inventory'])
 
 @app.route('/add_multiple_inventory', methods=['POST'])
+@login_required
 def add_multiple_inventory():
     ensure_folders_exist()
     inventory_data = load_inventory()
@@ -315,6 +366,7 @@ def add_multiple_inventory():
     return redirect(url_for('inventory'))
 
 @app.route('/edit_inventory_item/<item_id>', methods=['GET', 'POST'])
+@login_required
 def edit_inventory_item(item_id):
     inventory_data = load_inventory()
     
@@ -349,6 +401,7 @@ def edit_inventory_item(item_id):
     return render_template('edit_inventory.html', item=inventory_data['inventory'][item_index])
 
 @app.route('/delete_inventory_item/<item_id>', methods=['POST'])
+@login_required
 def delete_inventory_item(item_id):
     inventory_data = load_inventory()
     
@@ -361,6 +414,7 @@ def delete_inventory_item(item_id):
     return redirect(url_for('inventory'))
 
 @app.route('/sales')
+@login_required
 def sales():
     ensure_folders_exist()
     sales_data = load_daily_data('sales')
@@ -371,6 +425,7 @@ def sales():
                            inventory=inventory_data['inventory'])
 
 @app.route('/add_multiple_sales', methods=['POST'])
+@login_required
 def add_multiple_sales():
     ensure_folders_exist()
     inventory_data = load_inventory()
@@ -553,6 +608,7 @@ def add_multiple_sales():
     return render_template('receipt.html', receipt=receipt_data)
 
 @app.route('/delete_sale/<sale_id>', methods=['POST'])
+@login_required
 def delete_sale(sale_id):
     # Find the sale in any sales file
     sale, file_path, sales_data = find_sale_by_id(sale_id)
@@ -578,12 +634,14 @@ def delete_sale(sale_id):
     return redirect(url_for('sales'))
 
 @app.route('/expenses')
+@login_required
 def expenses():
     ensure_folders_exist()
     expenses_data = load_daily_data('expenses')
     return render_template('expenses.html', expenses=expenses_data['expenses'])
 
 @app.route('/add_expense', methods=['POST'])
+@login_required
 def add_expense():
     ensure_folders_exist()
     
@@ -596,6 +654,7 @@ def add_expense():
     return redirect(url_for('expenses'))
 
 @app.route('/reports')
+@login_required
 def reports():
     ensure_folders_exist()
     
@@ -649,6 +708,7 @@ def reports():
                            top_items=top_items)
 
 @app.route('/get_inventory_item/<item_id>', methods=['GET'])
+@login_required
 def get_inventory_item(item_id):
     inventory_data = load_inventory()
     item = next((item for item in inventory_data['inventory'] if item['id'] == item_id), None)
@@ -659,6 +719,7 @@ def get_inventory_item(item_id):
         return jsonify({'error': 'Item not found'}), 404
 
 @app.route('/add_trade_in', methods=['POST'])
+@login_required
 def add_trade_in():
     data = request.get_json()
     
@@ -672,6 +733,7 @@ def add_trade_in():
     return jsonify({'success': True, 'trade_in': data})
 
 @app.route('/add_borrowed_item', methods=['POST'])
+@login_required
 def add_borrowed_item():
     data = request.get_json()
     
