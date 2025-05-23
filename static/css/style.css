@@ -1080,3 +1080,98 @@ footer {
   background-color: #e68600;
   transform: translateY(-2px);
 }
+
+/* Login Page Styles */
+body.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--body-bg); /* Assuming --body-bg is light gray */
+    margin: 0; /* Reset default margin */
+    padding: 0; /* Reset default padding */
+    font-family: var(--font-main); /* Ensure consistent font */
+}
+
+.login-wrapper {
+    background-color: var(--card-bg); /* White background */
+    padding: 30px 40px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    width: 100%;
+    max-width: 450px; /* Adjust as needed */
+    text-align: center; /* Center h2 and button if not full width */
+}
+
+.login-wrapper h2 {
+    margin-bottom: 25px; /* Increased margin */
+    color: var(--primary-dark);
+    font-weight: 600; /* Ensure heading is bold */
+}
+
+.login-wrapper .form-group {
+    margin-bottom: 20px; /* Increased margin */
+    text-align: left; /* Align labels and inputs left */
+}
+
+.login-wrapper .form-group label {
+    display: block;
+    margin-bottom: 8px; /* Increased margin */
+    font-weight: bold; /* Make labels bold */
+    color: var(--dark-color); /* Use a darker color for labels */
+}
+
+.login-wrapper .form-group input[type="text"],
+.login-wrapper .form-group input[type="password"] {
+    width: 100%;
+    padding: 12px; /* Standardized padding */
+    border: 1px solid #ced4da; /* Standard border */
+    border-radius: var(--border-radius);
+    box-sizing: border-box;
+}
+
+.login-wrapper .btn {
+    width: 100%; /* Make button full width */
+    padding: 12px;
+    font-size: 16px; /* Ensure consistent font size */
+    margin-top: 10px; /* Add some margin above the button */
+}
+
+/* Flash Message Alert Styles */
+.flash-messages { /* Container for flash messages */
+    margin-bottom: 20px;
+    width: 100%; /* Ensure it takes full width of the wrapper */
+}
+
+.alert {
+    padding: 15px; /* Standardized padding */
+    margin-bottom: 15px; /* Standardized margin */
+    border: 1px solid transparent;
+    border-radius: var(--border-radius);
+    text-align: left; /* Text align left for messages */
+    font-size: 15px; /* Consistent font size for alerts */
+}
+
+.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.alert-warning {
+    color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+}
+
+.alert-info {
+    color: #0c5460;
+    background-color: #d1ecf1;
+    border-color: #bee5eb;
+}

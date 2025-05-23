@@ -337,6 +337,9 @@
                     <li><a href="{{ url_for('sales') }}">Sales</a></li>
                     <li><a href="{{ url_for('expenses') }}">Expenses</a></li>
                     <li><a href="{{ url_for('reports') }}">Reports</a></li>
+                    {% if session.user %}
+                    <li><a href="{{ url_for('logout') }}">Logout ({{ session.user }})</a></li>
+                    {% endif %}
                 </ul>
             </nav>
         </header>
