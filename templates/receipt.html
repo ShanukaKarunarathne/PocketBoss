@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipt - LUXURY MOBILE</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        
+        .receipt {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            position: relative;
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        
+        .watermark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            pointer-events: none;
+            z-index: 0;
+            opacity: 0.03;
+            transform: rotate(-30deg);
+            font-size: 80px;
+            font-weight: bold;
+            color: #000;
+            overflow: hidden;
+        }
+        
+        .watermark-text {
+            white-space: nowrap;
+            position: absolute;
+        }
+        
+        .receipt-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .receipt-header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 3px solid #d4af37;
+            padding-bottom: 25px;
+        }
+        
+        .logo {
+            font-size: 42px;
+            font-weight: bold;
+            color: #000;
+            margin: 0;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            display: inline-block;
+            padding-bottom: 8px;
+        }
+        
+        .receipt-header p {
+            margin: 8px 0;
+            color: #555;
+            font-size: 15px;
+        }
+        
+        .receipt-details {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 35px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            border-left: 4px solid #d4af37;
+        }
+        
+        .receipt-details div {
+            flex: 1;
+        }
+        
+        .receipt-items {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 35px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .receipt-items th, .receipt-items td {
+            padding: 15px 18px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .receipt-items th {
+            background: linear-gradient(to right, #d4af37, #f5e7a3);
+            font-weight: 600;
+            color: #000;
+            text-transform: uppercase;
+            font-size: 13px;
+            letter-spacing: 1px;
+        }
+        
+        .receipt-items tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .receipt-items tr:hover {
+            background-color: #f9f9f9;
+        }
+        
+        .imei-number {
+            font-family: monospace;
+            font-size: 13px;
+            word-break: break-all;
+            max-width: 120px;
+        }
+        
+        .receipt-total {
+            text-align: right;
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 25px;
+            padding: 20px;
+            border-top: 3px solid #d4af37;
+            color: #000;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+        
+        .receipt-footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #666;
+            font-size: 15px;
+            padding-top: 25px;
+            border-top: 1px solid #eee;
+        }
+        
+        .actions {
+            text-align: center;
+            margin-top: 40px;
+        }
+        
+        .btn {
+            background: linear-gradient(to right, #000, #333);
+            color: white;
+            border: none;
+            padding: 14px 28px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 0 10px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .btn:hover {
+            background: linear-gradient(to right, #333, #000);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        
+        .gold-text {
+            color: #d4af37;
+        }
+        
+        .qr-code {
+            text-align: center;
+            margin-top: 25px;
+        }
+        
+        .qr-code img {
+            width: 120px;
+            height: 120px;
+            border: 2px solid #d4af37;
+            padding: 5px;
+        }
+        
+        .receipt-stamp {
+            position: absolute;
+            bottom: 100px;
+            right: 50px;
+            opacity: 0.2;
+            transform: rotate(-15deg);
+            font-size: 24px;
+            font-weight: bold;
+            color: #d4af37;
+            border: 3px solid #d4af37;
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        
+        .signature-area {
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .signature-box {
+            border-top: 1px solid #999;
+            width: 200px;
+            padding-top: 5px;
+            text-align: center;
+            font-size: 14px;
+            color: #555;
+        }
+        
+        @media print {
+            .actions {
+                display: none;
+            }
+            
+            body {
+                background-color: white;
+                padding: 0;
+            }
+            
+            .receipt {
+                box-shadow: none;
+                padding: 0;
+                border: none;
+            }
+            
+            .watermark {
+                opacity: 0.05;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="receipt">
+        <div class="watermark">
+            <div class="watermark-text">LUXURY MOBILE LUXURY MOBILE LUXURY MOBILE</div>
+            <div class="watermark-text" style="top: 80px;">LUXURY MOBILE LUXURY MOBILE LUXURY MOBILE</div>
+            <div class="watermark-text" style="top: 160px;">LUXURY MOBILE LUXURY MOBILE LUXURY MOBILE</div>
+            <div class="watermark-text" style="top: 240px;">LUXURY MOBILE LUXURY MOBILE LUXURY MOBILE</div>
+            <div class="watermark-text" style="top: 320px;">LUXURY MOBILE LUXURY MOBILE LUXURY MOBILE</div>
+            <div class="watermark-text" style="top: 400px;">LUXURY MOBILE LUXURY MOBILE LUXURY MOBILE</div>
+            <div class="watermark-text" style="top: -80px;">LUXURY MOBILE LUXURY MOBILE LUXURY MOBILE</div>
+            <div class="watermark-text" style="top: -160px;">LUXURY MOBILE LUXURY MOBILE LUXURY MOBILE</div>
+        </div>
+        
+        <div class="receipt-content">
+            <div class="receipt-header">
+                <h1 class="logo">LUXURY <span class="gold-text">MOBILE</span></h1>
+                <p>No. 49, Ground Floor, MC Plaza, Kurunegala</p>
+                <p>Phone: 0777204002</p>
+                <p>www.luxurymobile.com</p>
+            </div>
+            
+            <div class="receipt-details">
+                <div>
+                    <p><strong>Receipt #:</strong> {{ receipt.receipt_id }}</p>
+                    <p><strong>Date & Time:</strong> {{ receipt.date }}</p>
+                </div>
+                <div>
+                    <p><strong>Customer:</strong> {{ receipt.customer_name }}</p>
+                    <p><strong>Phone:</strong> {{ receipt.customer_phone }}</p>
+                </div>
+            </div>
+            
+            <table class="receipt-items">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Category</th>
+                        <th>Model</th>
+                        <th>IMEI</th>
+                        <th>Qty</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for item in receipt.sale_items %}
+                    <tr>
+                        <td>{{ item.item_name }}</td>
+                        <td>{{ item.category }}</td>
+                        <td>{{ item.model_number }}</td>
+                        <td class="imei-number">{{ item.imei_number if item.imei_number else 'N/A' }}</td>
+                        <td>{{ item.quantity }}</td>
+                        <td>Rs.{{ item.unit_price }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            
+            <div class="receipt-total">
+                <p style="font-size: 24px; color: #000; margin-top: 15px;">Total: <span class="gold-text">Rs.{{ receipt.total }}</span></p>
+            </div>
+            
+            <div class="signature-area">
+                <div class="signature-box">Customer Signature</div>
+                <div class="signature-box">Authorized Signature</div>
+            </div>
+            
+            <div class="receipt-footer">
+                <p><strong>Thank you for choosing LUXURY MOBILE!</strong></p>
+                <p>Premium devices deserve premium service.</p>
+                <p>Returns and exchanges accepted within 14 days with receipt.</p>
+                <p>This receipt serves as your warranty document.</p>
+            </div>
+            
+            <div class="receipt-stamp">
+                PAID
+            </div>
+            
+            <div class="actions">
+                <button class="btn" onclick="window.print()">Print Receipt</button>
+                <button class="btn" onclick="downloadReceipt()">Download Receipt</button>
+                <a href="{{ url_for('sales') }}" class="btn">Back to Sales</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        function downloadReceipt() {
+            // Create a clone of the receipt without the action buttons
+            const receiptContent = document.querySelector('.receipt').cloneNode(true);
+            const actions = receiptContent.querySelector('.actions');
+            if (actions) {
+                actions.remove();
+            }
+            
+            // Create a new HTML document with just the receipt
+            const html = `
+                <!DOCTYPE html>
+                <html>
+                <head>
+                    <title>LUXURY MOBILE Receipt</title>
+                    <style>${document.querySelector('style').innerHTML}</style>
+                </head>
+                <body>
+                    ${receiptContent.outerHTML}
+                </body>
+                </html>
+            `;
+            
+            // Create a Blob with the HTML content
+            const blob = new Blob([html], { type: 'text/html' });
+            
+            // Create a download link and trigger the download
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.download = 'LUXURY_MOBILE_Receipt_{{ receipt.receipt_id }}.html';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    </script>
+</body>
+</html>

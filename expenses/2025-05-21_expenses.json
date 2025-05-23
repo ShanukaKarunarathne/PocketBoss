@@ -1,0 +1,1251 @@
+{
+    "expenses": [
+        {
+            "id": "ee1bc166-db65-4d43-8556-a1975c92e761",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 7 & 8 backcover (Model: JELLY silicon, Qty: 2)",
+            "amount": 1200.0,
+            "date": "2025-05-21 18:11:34"
+        },
+        {
+            "id": "3865cec6-b07b-4c79-a077-294661f76ff5",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 7 & 8 backcover (Model: printed, Qty: 4)",
+            "amount": 1600.0,
+            "date": "2025-05-21 18:13:03"
+        },
+        {
+            "id": "02a181fd-6b1d-4d77-bc0e-2a7fe91ccc75",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 7 & 8 backcover (Model: carbon, Qty: 1)",
+            "amount": 690.0,
+            "date": "2025-05-21 18:14:18"
+        },
+        {
+            "id": "60015f82-89ed-46b1-ab35-f43317445ede",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 6 plus & 6s plus (Model: carbon fiber, Qty: 3)",
+            "amount": 2070.0,
+            "date": "2025-05-21 18:14:55"
+        },
+        {
+            "id": "221532ee-0954-48c5-b0c0-f2a6c5af9d96",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 6 & 6s (Model: 6G carbon fiber, Qty: 2)",
+            "amount": 1380.0,
+            "date": "2025-05-21 18:15:41"
+        },
+        {
+            "id": "6a69a1ce-0e99-4a2d-ab18-c2014920acba",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 6 & 6s (Model: 6G leather case, Qty: 1)",
+            "amount": 380.0,
+            "date": "2025-05-21 18:16:05"
+        },
+        {
+            "id": "4b832689-6cee-48c0-89a6-b826a77f1b40",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 7 plus & 8 plus (Model: normal silicon, Qty: 1)",
+            "amount": 390.0,
+            "date": "2025-05-21 18:17:04"
+        },
+        {
+            "id": "df811049-bda1-4fc1-9458-20535d73ff7b",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 11 pro (Model: evo clear, Qty: 9)",
+            "amount": 3600.0,
+            "date": "2025-05-21 18:17:41"
+        },
+        {
+            "id": "75805007-781f-4322-8b2c-29656ffb4795",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 11 pro (Model: colour -magsafe, Qty: 1)",
+            "amount": 500.0,
+            "date": "2025-05-21 18:19:39"
+        },
+        {
+            "id": "9712b3f6-4bf8-424a-98c3-eaca74688703",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 11 pro (Model: coblue tpu, Qty: 2)",
+            "amount": 1500.0,
+            "date": "2025-05-21 18:20:40"
+        },
+        {
+            "id": "2617b984-87c8-4796-b8d3-fade0b8e3fa2",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 11 pro (Model: JELLY silicon, Qty: 3)",
+            "amount": 1800.0,
+            "date": "2025-05-21 18:21:01"
+        },
+        {
+            "id": "7924f85c-c574-4dcf-931e-8b04819ee6a2",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 11 pro (Model: printed, Qty: 1)",
+            "amount": 400.0,
+            "date": "2025-05-21 18:21:18"
+        },
+        {
+            "id": "c62f61e4-b08c-495c-b75d-91007ae10dcf",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 11 pro max (Model: printed, Qty: 6)",
+            "amount": 2400.0,
+            "date": "2025-05-21 18:22:41"
+        },
+        {
+            "id": "79ca31e6-ae39-426b-8acd-1850fc277bf9",
+            "category": "Inventory Purchase",
+            "description": "Accessory: evo clear (Model: 11promax, Qty: 3)",
+            "amount": 1200.0,
+            "date": "2025-05-21 18:24:40"
+        },
+        {
+            "id": "e0adeded-09eb-4158-b1fd-c9b1c14a7b18",
+            "category": "Inventory Purchase",
+            "description": "Accessory: 11promax (Model: tpu, Qty: 1)",
+            "amount": 200.0,
+            "date": "2025-05-21 18:27:16"
+        },
+        {
+            "id": "c22e3f19-9eba-4210-9d7d-510712d583af",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 11 pro max (Model: magsafe , Qty: 1)",
+            "amount": 500.0,
+            "date": "2025-05-21 18:29:09"
+        },
+        {
+            "id": "dfaede19-202d-42b8-8418-36914d94e244",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 11 pro max (Model: carbon fiber, Qty: 3)",
+            "amount": 2070.0,
+            "date": "2025-05-21 18:30:07"
+        },
+        {
+            "id": "0aa3acc1-1d0f-46f3-9ae1-d6201acba43c",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 11 pro max (Model: coblue tpu, Qty: 2)",
+            "amount": 1500.0,
+            "date": "2025-05-21 18:31:26"
+        },
+        {
+            "id": "d078b554-071e-4537-bf82-6dc7b79253fa",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 11 pro max (Model: silicon, Qty: 1)",
+            "amount": 390.0,
+            "date": "2025-05-21 18:37:02"
+        },
+        {
+            "id": "9c1a4fff-d787-440d-bdec-8d2891a8f8fb",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 11 (Model: JELLY silicon, Qty: 4)",
+            "amount": 2400.0,
+            "date": "2025-05-21 18:39:22"
+        },
+        {
+            "id": "2946a70b-e3f9-424c-b5ed-d2cec5726619",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 11  (Model: evo clear, Qty: 4)",
+            "amount": 1600.0,
+            "date": "2025-05-21 18:40:57"
+        },
+        {
+            "id": "bd30d36f-6ede-4841-9c87-bf96e6b74fe5",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone11 (Model: colour -magsafe, Qty: 1)",
+            "amount": 500.0,
+            "date": "2025-05-21 18:41:51"
+        },
+        {
+            "id": "980a1917-888d-4eb2-b40a-1346673b2dc6",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 12 (Model: evo clear, Qty: 4)",
+            "amount": 1600.0,
+            "date": "2025-05-21 18:46:19"
+        },
+        {
+            "id": "2da0c04f-af56-4b2f-875f-dae3c8a218b7",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 12 (Model: JELLY silicon, Qty: 2)",
+            "amount": 1200.0,
+            "date": "2025-05-21 18:47:01"
+        },
+        {
+            "id": "5e90d036-a038-4d0e-8392-a0bdce3f1db8",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 12 (Model: evo clear, Qty: 4)",
+            "amount": 1600.0,
+            "date": "2025-05-21 18:47:40"
+        },
+        {
+            "id": "6da599d9-73bc-491c-a6d4-fb064ec8773e",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 12 (Model: carbon fiber, Qty: 2)",
+            "amount": 1380.0,
+            "date": "2025-05-21 18:48:37"
+        },
+        {
+            "id": "ce09eb72-47d3-4bb8-a6e0-8f289028dd89",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 12 (Model: magnetic csase, Qty: 1)",
+            "amount": 800.0,
+            "date": "2025-05-21 18:49:56"
+        },
+        {
+            "id": "442e6619-1d10-427c-8919-9d7abffe7106",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 12pro (Model: carbon fiber, Qty: 1)",
+            "amount": 690.0,
+            "date": "2025-05-21 18:54:42"
+        },
+        {
+            "id": "bfb5bf13-642d-45d9-a923-287552ee811f",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 12pro (Model: printed online, Qty: 4)",
+            "amount": 2800.0,
+            "date": "2025-05-21 18:56:12"
+        },
+        {
+            "id": "0bd13bc0-4a15-46ca-9983-196c63c9670b",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 12pro (Model: printed, Qty: 1)",
+            "amount": 700.0,
+            "date": "2025-05-21 18:57:23"
+        },
+        {
+            "id": "b5106844-7ecb-409d-a319-665973bc2817",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 12 pro max (Model: evo clear, Qty: 5)",
+            "amount": 2000.0,
+            "date": "2025-05-21 18:57:55"
+        },
+        {
+            "id": "dd99bc30-b49a-4724-b46f-df9a93bd37e3",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 12 pro max (Model: carbon fiber, Qty: 1)",
+            "amount": 690.0,
+            "date": "2025-05-21 18:58:45"
+        },
+        {
+            "id": "69e918dd-6c60-48df-bd87-9a04011d2cfb",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 12 pro max (Model: printed online, Qty: 2)",
+            "amount": 1400.0,
+            "date": "2025-05-21 18:59:43"
+        },
+        {
+            "id": "10bdf893-2d03-49e5-b817-3e483e40f9be",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 12 pro max (Model: normal silicon, Qty: 1)",
+            "amount": 390.0,
+            "date": "2025-05-21 19:01:31"
+        },
+        {
+            "id": "c48ef279-bacb-4bcf-a6c4-276a48225435",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 12 pro max (Model: coblue tpu, Qty: 1)",
+            "amount": 750.0,
+            "date": "2025-05-21 19:02:11"
+        },
+        {
+            "id": "efd4614f-84cf-4c1a-b145-b9fc7319bd76",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 12 pro max (Model: tpu, Qty: 1)",
+            "amount": 200.0,
+            "date": "2025-05-21 19:02:32"
+        },
+        {
+            "id": "f2b8edce-81db-4d36-ac73-faeb85422508",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 13 (Model: evo clear, Qty: 5)",
+            "amount": 2000.0,
+            "date": "2025-05-21 19:02:52"
+        },
+        {
+            "id": "48ed487c-0652-4fa5-8975-8f50f0711ad1",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 13 (Model: printed online, Qty: 1)",
+            "amount": 700.0,
+            "date": "2025-05-21 19:03:30"
+        },
+        {
+            "id": "3c73cc82-725a-446e-b367-30ac65204057",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 13 pro (Model: evo clear, Qty: 3)",
+            "amount": 1200.0,
+            "date": "2025-05-21 19:04:21"
+        },
+        {
+            "id": "831fc905-9c23-4dda-ba0b-5c46bd8b2993",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 13 pro (Model: printed online, Qty: 2)",
+            "amount": 1400.0,
+            "date": "2025-05-21 19:04:55"
+        },
+        {
+            "id": "6b3a2004-bcdc-46ed-b81b-de5b86105fac",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 13 pro (Model: JELLY silicon, Qty: 2)",
+            "amount": 1200.0,
+            "date": "2025-05-21 19:05:26"
+        },
+        {
+            "id": "da915be1-d996-4def-a399-7aa2775c8eee",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 13 pro (Model: colour -magsafe, Qty: 1)",
+            "amount": 600.0,
+            "date": "2025-05-21 19:06:53"
+        },
+        {
+            "id": "bc874059-c660-46b5-ab93-126f8328e6ba",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 13 pro max (Model: colour -magsafe, Qty: 2)",
+            "amount": 1400.0,
+            "date": "2025-05-21 19:07:19"
+        },
+        {
+            "id": "8bfd0d5c-13ec-4cd7-9418-52f6ce154ad4",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 13 pro max (Model: carbon fiber, Qty: 1)",
+            "amount": 690.0,
+            "date": "2025-05-21 19:07:41"
+        },
+        {
+            "id": "8b6a65cd-8a14-4423-93a8-7d59cdaef6b3",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 13 pro max (Model: evo clear, Qty: 3)",
+            "amount": 1200.0,
+            "date": "2025-05-21 19:08:02"
+        },
+        {
+            "id": "1faf4cd7-171f-4ad4-9ece-3649dc37f32d",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 13 pro max (Model: coblue tpu, Qty: 2)",
+            "amount": 1500.0,
+            "date": "2025-05-21 19:08:19"
+        },
+        {
+            "id": "24d7db46-080d-4e95-a669-f4ab64837a48",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 14 (Model: carbon fiber, Qty: 1)",
+            "amount": 690.0,
+            "date": "2025-05-21 19:08:46"
+        },
+        {
+            "id": "6f87c9a9-9b49-411b-ab15-d3563e06d875",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 14 (Model: evo clear, Qty: 4)",
+            "amount": 1600.0,
+            "date": "2025-05-21 19:09:21"
+        },
+        {
+            "id": "243dc83f-32e5-4a57-833b-5fe7c38e45a0",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 14 (Model: matte magsafe, Qty: 1)",
+            "amount": 700.0,
+            "date": "2025-05-21 19:09:57"
+        },
+        {
+            "id": "a9a24a92-6931-47fc-9c52-09855999b477",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 14 pro (Model: coblue tpu, Qty: 1)",
+            "amount": 750.0,
+            "date": "2025-05-21 19:10:25"
+        },
+        {
+            "id": "43e7abcd-5b1f-4e7f-b9b0-91e0a93f59ed",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 14 pro (Model: JELLY silicon, Qty: 3)",
+            "amount": 1800.0,
+            "date": "2025-05-21 19:10:51"
+        },
+        {
+            "id": "b23a6aed-9e54-4063-bdc6-caffb5f297e8",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 14 pro (Model: evo clear, Qty: 3)",
+            "amount": 1200.0,
+            "date": "2025-05-21 19:11:08"
+        },
+        {
+            "id": "0f9bffb7-103c-46c3-a750-d3173ee10ee2",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 14 pro (Model: printed online, Qty: 3)",
+            "amount": 2100.0,
+            "date": "2025-05-21 19:11:26"
+        },
+        {
+            "id": "6eb0f2d7-8d5a-44ea-956c-4e586257a881",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 14 pro (Model: carbon fiber, Qty: 1)",
+            "amount": 690.0,
+            "date": "2025-05-21 19:11:38"
+        },
+        {
+            "id": "c2760576-9a7f-4d04-bd37-869098c53c00",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 14 pro max (Model: evo clear, Qty: 5)",
+            "amount": 2000.0,
+            "date": "2025-05-21 19:12:41"
+        },
+        {
+            "id": "474632a3-6583-45d5-9b0c-e269413ffc3b",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 14 pro max (Model: JELLY silicon, Qty: 3)",
+            "amount": 1800.0,
+            "date": "2025-05-21 19:12:57"
+        },
+        {
+            "id": "d6bdff95-1fba-4d4b-a3d8-ed8cbc3daf40",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 15 (Model: evo clear, Qty: 4)",
+            "amount": 1600.0,
+            "date": "2025-05-21 19:13:15"
+        },
+        {
+            "id": "d1a2bde8-bf9b-431e-8c0d-e0ca6927b180",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 15 (Model: colour -magsafe, Qty: 3)",
+            "amount": 2100.0,
+            "date": "2025-05-21 19:13:43"
+        },
+        {
+            "id": "09e0546c-f047-43e6-803a-b6d831c49d28",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 15 (Model: carbon fiber, Qty: 3)",
+            "amount": 2070.0,
+            "date": "2025-05-21 19:15:21"
+        },
+        {
+            "id": "c0f0ba5a-6093-4238-a331-1d74a5b49ad0",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 15 (Model: coblue tpu, Qty: 2)",
+            "amount": 1500.0,
+            "date": "2025-05-21 19:15:35"
+        },
+        {
+            "id": "a341f612-918a-456a-8fd4-079885351091",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 15 pro (Model: printed online, Qty: 1)",
+            "amount": 700.0,
+            "date": "2025-05-21 19:15:58"
+        },
+        {
+            "id": "58075141-b649-4661-91e5-48f663235c1b",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 15 pro (Model: evo clear, Qty: 2)",
+            "amount": 800.0,
+            "date": "2025-05-21 19:16:49"
+        },
+        {
+            "id": "74b5d2d7-2fe4-4b35-9ba8-20e202a98ebc",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 15 pro (Model: coblue tpu, Qty: 1)",
+            "amount": 750.0,
+            "date": "2025-05-21 19:17:09"
+        },
+        {
+            "id": "4ccf8ae4-f365-47f8-b5ad-e33b0bdf9454",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 15 pro (Model: JELLY silicon, Qty: 10)",
+            "amount": 6000.0,
+            "date": "2025-05-21 19:17:38"
+        },
+        {
+            "id": "44db1495-69c8-457a-bdaa-ac37af2876ce",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 15 pro max (Model: printed online, Qty: 2)",
+            "amount": 1400.0,
+            "date": "2025-05-21 19:18:55"
+        },
+        {
+            "id": "565b36c1-0070-4896-b127-9a9578524eb5",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 15 pro max (Model: carbon fiber, Qty: 3)",
+            "amount": 2070.0,
+            "date": "2025-05-21 19:19:09"
+        },
+        {
+            "id": "b99f5451-8523-43d9-9a0f-ad54c9e3a942",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 15 pro max (Model: coblue tpu, Qty: 1)",
+            "amount": 750.0,
+            "date": "2025-05-21 19:19:29"
+        },
+        {
+            "id": "49f82f20-b1d1-40e4-a22d-4822f8e43e23",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 15 pro max (Model: JELLY silicon, Qty: 4)",
+            "amount": 2400.0,
+            "date": "2025-05-21 19:19:42"
+        },
+        {
+            "id": "a58e7e58-be6e-47fa-afe5-06f6075dad49",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 15 pro max (Model: matte magsafe, Qty: 1)",
+            "amount": 700.0,
+            "date": "2025-05-21 19:20:04"
+        },
+        {
+            "id": "5f862907-a3da-441e-9cff-af510a0b86c4",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 16 (Model: carbon fiber, Qty: 3)",
+            "amount": 2070.0,
+            "date": "2025-05-21 19:20:27"
+        },
+        {
+            "id": "d41c81f5-3549-449d-9151-730d111f7c70",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 16 (Model: colour -magsafe , Qty: 3)",
+            "amount": 2250.0,
+            "date": "2025-05-21 19:21:44"
+        },
+        {
+            "id": "27b99c99-83f4-4c4a-b7b5-105c3da458fd",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 16 (Model: magsafe tpu, Qty: 3)",
+            "amount": 1800.0,
+            "date": "2025-05-21 19:22:26"
+        },
+        {
+            "id": "e08b6fcf-0719-4bbf-bc14-a413af13c3f2",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 16 (Model: evo clear, Qty: 2)",
+            "amount": 800.0,
+            "date": "2025-05-21 19:22:56"
+        },
+        {
+            "id": "2d5b34c5-9541-4777-ad5b-52abb29a2260",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 16 pro (Model: evo clear, Qty: 2)",
+            "amount": 800.0,
+            "date": "2025-05-21 19:23:13"
+        },
+        {
+            "id": "b5498214-13d2-4552-bd36-78df5e6b1f21",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 16 pro (Model: carbon fiber, Qty: 3)",
+            "amount": 2070.0,
+            "date": "2025-05-21 19:23:29"
+        },
+        {
+            "id": "767b0cc2-b6bf-4477-95a8-ae9aaf1e62e2",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 16 pro (Model: magsafe tpu, Qty: 2)",
+            "amount": 1200.0,
+            "date": "2025-05-21 19:24:03"
+        },
+        {
+            "id": "08c04ee9-6dfb-482b-bb03-5541c64582e1",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 16 pro (Model: colour -magsafe, Qty: 3)",
+            "amount": 2100.0,
+            "date": "2025-05-21 19:24:18"
+        },
+        {
+            "id": "c4f3b453-6bab-472f-9b17-2c1ec0f8fcf8",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone xs max (Model: leather case, Qty: 1)",
+            "amount": 400.0,
+            "date": "2025-05-21 19:24:44"
+        },
+        {
+            "id": "54c77ad3-a337-4ed7-9ece-7ff4c80517c2",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone x & xs (Model: JELLY silicon, Qty: 2)",
+            "amount": 1200.0,
+            "date": "2025-05-21 19:25:06"
+        },
+        {
+            "id": "d5dfa53b-33f7-40fc-8591-0f9487068aa7",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 16 pro max (Model: matte magsafe, Qty: 2)",
+            "amount": 1400.0,
+            "date": "2025-05-21 19:25:36"
+        },
+        {
+            "id": "27b1ea55-6d7b-40e1-920a-e3a522235ba9",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 16 pro max (Model: carbon fiber, Qty: 2)",
+            "amount": 1380.0,
+            "date": "2025-05-21 19:25:53"
+        },
+        {
+            "id": "9d5a47b5-e297-49ec-bded-5638bd4af751",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 16 pro max (Model: evo clear, Qty: 1)",
+            "amount": 400.0,
+            "date": "2025-05-21 19:26:05"
+        },
+        {
+            "id": "286ccd7c-6606-4d6d-b5f5-c4baf11ec066",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 16 pro max (Model: magsafe tpu, Qty: 2)",
+            "amount": 1200.0,
+            "date": "2025-05-21 19:26:25"
+        },
+        {
+            "id": "a6e8a867-af2b-4278-8867-245305b40723",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 16 pro max (Model: tpu, Qty: 1)",
+            "amount": 200.0,
+            "date": "2025-05-21 19:26:40"
+        },
+        {
+            "id": "05238599-2b76-43e0-82b4-b7b659a5b953",
+            "category": "Inventory Purchase",
+            "description": "Accessory: vision 1+ (Model: box matte, Qty: 3)",
+            "amount": 870.0,
+            "date": "2025-05-21 19:28:37"
+        },
+        {
+            "id": "2310bfe5-899f-43ba-abb5-4067ef9fd871",
+            "category": "Inventory Purchase",
+            "description": "Accessory: pop5 lite (Model: box matte, Qty: 3)",
+            "amount": 870.0,
+            "date": "2025-05-21 19:32:40"
+        },
+        {
+            "id": "3939744a-8a41-422e-bb8b-58db6733237d",
+            "category": "Inventory Purchase",
+            "description": "Accessory: oppo a17 (Model: box matte, Qty: 290)",
+            "amount": 84100.0,
+            "date": "2025-05-21 19:33:38"
+        },
+        {
+            "id": "b3043784-f027-4523-90cb-09bf799b2d07",
+            "category": "Inventory Purchase",
+            "description": "Accessory: oppo a55 (Model: box matte, Qty: 2)",
+            "amount": 580.0,
+            "date": "2025-05-21 19:36:13"
+        },
+        {
+            "id": "30aaa493-0545-4c6d-b46d-f42565ec5ad2",
+            "category": "Inventory Purchase",
+            "description": "Accessory: i tell a055 (Model: box matte, Qty: 3)",
+            "amount": 870.0,
+            "date": "2025-05-21 19:37:07"
+        },
+        {
+            "id": "6d048f48-acae-4420-89f1-1b550ffa03a1",
+            "category": "Inventory Purchase",
+            "description": "Accessory: samsung A35 (Model: box matte, Qty: 1)",
+            "amount": 290.0,
+            "date": "2025-05-21 19:38:49"
+        },
+        {
+            "id": "c4a6bd66-af12-4fb5-9d3d-3c9a2be9ee86",
+            "category": "Inventory Purchase",
+            "description": "Accessory: oppoA57 (Model: box matte, Qty: 3)",
+            "amount": 870.0,
+            "date": "2025-05-21 19:39:25"
+        },
+        {
+            "id": "403f723b-f24b-4657-87dc-dd3a3722a1e0",
+            "category": "Inventory Purchase",
+            "description": "Accessory: samsungA245G (Model: AUTO FOCUS, Qty: 3)",
+            "amount": 1170.0,
+            "date": "2025-05-21 19:41:26"
+        },
+        {
+            "id": "3a8e07b8-22ce-4d04-8f1b-bfc271c33070",
+            "category": "Inventory Purchase",
+            "description": "Accessory: OPPOA15 (Model: box matte, Qty: 3)",
+            "amount": 870.0,
+            "date": "2025-05-21 19:43:18"
+        },
+        {
+            "id": "98bd4fed-52c4-4014-85e1-56fdf6d92e7f",
+            "category": "Inventory Purchase",
+            "description": "Accessory: REDMI13A (Model: AUTO FOCUS, Qty: 1)",
+            "amount": 390.0,
+            "date": "2025-05-21 19:44:30"
+        },
+        {
+            "id": "a43bc09b-be7a-4282-8261-3d26a69a2b92",
+            "category": "Inventory Purchase",
+            "description": "Accessory: OPPOF15 (Model: BOX MATTE, Qty: 1)",
+            "amount": 290.0,
+            "date": "2025-05-21 19:45:19"
+        },
+        {
+            "id": "f13e0a05-3e21-43fb-84ee-71168f1a49f7",
+            "category": "Inventory Purchase",
+            "description": "Accessory: OPPO F15 (Model: BOX MATTE, Qty: 2)",
+            "amount": 580.0,
+            "date": "2025-05-21 19:46:45"
+        },
+        {
+            "id": "0e95d822-d046-405c-914a-0031340b6bbc",
+            "category": "Inventory Purchase",
+            "description": "Accessory: REDMI NOTE 13 4G (Model: BOX MATTE, Qty: 2)",
+            "amount": 580.0,
+            "date": "2025-05-21 19:48:06"
+        },
+        {
+            "id": "b7b4589b-0726-49c3-9e1b-c2748255fb58",
+            "category": "Inventory Purchase",
+            "description": "Accessory: samsungA05S (Model: BOX MATTE, Qty: 2)",
+            "amount": 580.0,
+            "date": "2025-05-21 19:49:36"
+        },
+        {
+            "id": "74d6bec5-5d8f-48c2-8ddc-d49419072549",
+            "category": "Inventory Purchase",
+            "description": "Accessory: AO5S (Model: LUXURY CASE, Qty: 1)",
+            "amount": 290.0,
+            "date": "2025-05-21 19:50:26"
+        },
+        {
+            "id": "67406ad7-db5c-4623-aae7-712328555db7",
+            "category": "Inventory Purchase",
+            "description": "Accessory: samsung A20&A30 (Model: BOX MATTE, Qty: 2)",
+            "amount": 580.0,
+            "date": "2025-05-21 19:51:23"
+        },
+        {
+            "id": "6a763484-44d9-4ff5-be4c-edf3394edb5f",
+            "category": "Inventory Purchase",
+            "description": "Accessory: samsungM02S (Model: AUTO FOCUS, Qty: 1)",
+            "amount": 390.0,
+            "date": "2025-05-21 19:52:01"
+        },
+        {
+            "id": "04a7ea11-a2ec-40be-bc16-aabb42c18f54",
+            "category": "Inventory Purchase",
+            "description": "Accessory: samsung A23 5G (Model: AUTO FOCUS, Qty: 1)",
+            "amount": 390.0,
+            "date": "2025-05-21 19:52:28"
+        },
+        {
+            "id": "3b3d57e9-df02-4a50-a5d3-1a6a0dfd93f0",
+            "category": "Inventory Purchase",
+            "description": "Accessory: samsung A23 5G (Model: BOX MATTE, Qty: 2)",
+            "amount": 580.0,
+            "date": "2025-05-21 19:52:59"
+        },
+        {
+            "id": "85d26689-f873-4528-bcef-053a66a405a1",
+            "category": "Inventory Purchase",
+            "description": "Accessory: samsung A23 5G (Model: leather case, Qty: 1)",
+            "amount": 400.0,
+            "date": "2025-05-21 19:54:48"
+        },
+        {
+            "id": "34866ec9-896b-4c05-bcea-707675b02fd5",
+            "category": "Inventory Purchase",
+            "description": "Accessory: SPARK GO 2024 (Model: silicon, Qty: 2)",
+            "amount": 600.0,
+            "date": "2025-05-21 19:55:43"
+        },
+        {
+            "id": "292dc01e-81b2-46f5-b95e-29b58b3364e7",
+            "category": "Inventory Purchase",
+            "description": "Accessory: SPARK GO 2024 (Model: BOX MATTE, Qty: 1)",
+            "amount": 290.0,
+            "date": "2025-05-21 19:56:20"
+        },
+        {
+            "id": "900ec1d1-73ba-45fc-a376-1e624d3f97dc",
+            "category": "Inventory Purchase",
+            "description": "Accessory: samsungA25 5G (Model: AUTO FOCUS, Qty: 3)",
+            "amount": 1170.0,
+            "date": "2025-05-21 19:56:48"
+        },
+        {
+            "id": "a12eed4d-baba-4450-ba9d-37353781fb32",
+            "category": "Inventory Purchase",
+            "description": "Accessory: samsung A34 5G (Model: AUTO FOCUS, Qty: 3)",
+            "amount": 1170.0,
+            "date": "2025-05-21 19:57:39"
+        },
+        {
+            "id": "bda8f64c-0a03-410e-90a7-e9ffc03ced9e",
+            "category": "Inventory Purchase",
+            "description": "Accessory: samsung A34 5G (Model: BOX MATTE, Qty: 3)",
+            "amount": 870.0,
+            "date": "2025-05-21 19:58:30"
+        },
+        {
+            "id": "be43265e-6ceb-4f71-adae-ca0f38e8950f",
+            "category": "Inventory Purchase",
+            "description": "Accessory: SPARK GO 2023 (Model: BOX MATTE, Qty: 4)",
+            "amount": 1160.0,
+            "date": "2025-05-21 20:01:06"
+        },
+        {
+            "id": "3fef731a-a969-4a86-8d2e-16628e634173",
+            "category": "Inventory Purchase",
+            "description": "Accessory: samsung A54 (Model: AUTO FOCUS, Qty: 3)",
+            "amount": 1170.0,
+            "date": "2025-05-21 20:01:36"
+        },
+        {
+            "id": "85e1ccd9-37db-4f30-874d-592b6bad7de7",
+            "category": "Inventory Purchase",
+            "description": "Accessory: IT A70 (Model: BOX MATTE, Qty: 3)",
+            "amount": 870.0,
+            "date": "2025-05-21 20:02:01"
+        },
+        {
+            "id": "1e1cb5ef-5722-4a11-a023-e6bfd5d2d104",
+            "category": "Inventory Purchase",
+            "description": "Accessory: samsung A12 (Model: BOX MATTE, Qty: 2)",
+            "amount": 580.0,
+            "date": "2025-05-21 20:02:35"
+        },
+        {
+            "id": "d9c6e212-9c8b-4ffb-b2ac-fbf6cd09a874",
+            "category": "Inventory Purchase",
+            "description": "Accessory: samsung A7 (Model: BOX MATTE, Qty: 3)",
+            "amount": 870.0,
+            "date": "2025-05-21 20:03:04"
+        },
+        {
+            "id": "d0bacce6-bcee-4721-9add-add0aad53dd0",
+            "category": "Inventory Purchase",
+            "description": "Accessory: samsungA24  (Model: BOX MATTE, Qty: 2)",
+            "amount": 580.0,
+            "date": "2025-05-21 20:03:37"
+        },
+        {
+            "id": "cd7edef0-50aa-444c-aff9-a76da16ef31e",
+            "category": "Inventory Purchase",
+            "description": "Accessory: samsung A15 (Model: AUTO FOCUS, Qty: 2)",
+            "amount": 780.0,
+            "date": "2025-05-21 20:04:07"
+        },
+        {
+            "id": "7183342c-5e70-469e-bd05-e1930114e510",
+            "category": "Inventory Purchase",
+            "description": "Accessory: samsung A15 (Model: BOX MATTE, Qty: 2)",
+            "amount": 580.0,
+            "date": "2025-05-21 20:04:40"
+        },
+        {
+            "id": "48b28783-9023-46d2-a996-8d53ba0e766c",
+            "category": "Inventory Purchase",
+            "description": "Accessory: SAMSUNG A10S (Model: BOX MATTE, Qty: 3)",
+            "amount": 870.0,
+            "date": "2025-05-21 20:05:12"
+        },
+        {
+            "id": "2feeaed5-8c9e-4eb2-9d3d-d0387e2cfc7f",
+            "category": "Inventory Purchase",
+            "description": "Accessory: samsung A11 (Model: BOX MATTE, Qty: 1)",
+            "amount": 290.0,
+            "date": "2025-05-21 20:06:12"
+        },
+        {
+            "id": "bd7b14d4-fc4c-4936-a577-7fed1aff9beb",
+            "category": "Inventory Purchase",
+            "description": "Accessory: samsung A05 (Model: BOX MATTE, Qty: 2)",
+            "amount": 580.0,
+            "date": "2025-05-21 20:07:13"
+        },
+        {
+            "id": "24582805-452b-40e2-b90d-c015d3d139ff",
+            "category": "Inventory Purchase",
+            "description": "Accessory: samsung A16 (Model: printed CASE , Qty: 2)",
+            "amount": 800.0,
+            "date": "2025-05-21 20:08:26"
+        },
+        {
+            "id": "6386c950-ebe9-4f80-9ef2-16a6b4cd3498",
+            "category": "Inventory Purchase",
+            "description": "Accessory: samsung A06 (Model: silicon, Qty: 1)",
+            "amount": 300.0,
+            "date": "2025-05-21 20:12:37"
+        },
+        {
+            "id": "8db93e54-58c8-4b5f-ba8b-75497ddc521e",
+            "category": "Inventory Purchase",
+            "description": "Accessory: SAMSUNG A06 (Model: leather case, Qty: 3)",
+            "amount": 1200.0,
+            "date": "2025-05-21 20:13:23"
+        },
+        {
+            "id": "143d27b0-24d6-44db-ab00-344db54b5b9b",
+            "category": "Inventory Purchase",
+            "description": "Accessory: samsungA06 (Model: BOX MATTE, Qty: 1)",
+            "amount": 290.0,
+            "date": "2025-05-21 20:20:11"
+        },
+        {
+            "id": "14a6091b-58a0-4d52-9372-ab785526ec96",
+            "category": "Inventory Purchase",
+            "description": "Accessory: SAMSUNG A52  (Model: BOX MATTE, Qty: 1)",
+            "amount": 290.0,
+            "date": "2025-05-21 20:20:58"
+        },
+        {
+            "id": "af228fd3-3c3f-4199-96d4-e878c9801041",
+            "category": "Inventory Purchase",
+            "description": "Accessory: SAMSUNG A52 (Model: leather case, Qty: 1)",
+            "amount": 400.0,
+            "date": "2025-05-21 20:21:45"
+        },
+        {
+            "id": "4ec3f9c7-cf65-4664-b3c9-895504384b2c",
+            "category": "Inventory Purchase",
+            "description": "Accessory: samsung A35 (Model: AUTO FOCUS, Qty: 3)",
+            "amount": 1170.0,
+            "date": "2025-05-21 20:22:25"
+        },
+        {
+            "id": "49ffd6ce-31b8-4b14-a5a9-9f33420ecbf6",
+            "category": "Inventory Purchase",
+            "description": "Accessory: samsung A35 (Model: BOX MATTE, Qty: 1)",
+            "amount": 290.0,
+            "date": "2025-05-21 20:23:05"
+        },
+        {
+            "id": "34002917-c943-4a43-ac72-3058e89b3d3e",
+            "category": "Inventory Purchase",
+            "description": "Accessory: SPARK GO 2021 (Model: BOX MATT, Qty: 2)",
+            "amount": 580.0,
+            "date": "2025-05-21 20:24:07"
+        },
+        {
+            "id": "5f4975da-576f-4c93-9a59-57cbfbff6f58",
+            "category": "Inventory Purchase",
+            "description": "Accessory: VIVO Y90 (Model: BOX MATTE, Qty: 3)",
+            "amount": 870.0,
+            "date": "2025-05-21 20:24:41"
+        },
+        {
+            "id": "994901b1-60cb-4bc3-8651-e1fbb769b6ce",
+            "category": "Inventory Purchase",
+            "description": "Accessory: IT A60 (Model: BOX MATTE, Qty: 1)",
+            "amount": 290.0,
+            "date": "2025-05-21 20:25:16"
+        },
+        {
+            "id": "10486b95-0be6-4b84-bdcc-ad2a2abfe79d",
+            "category": "Inventory Purchase",
+            "description": "Accessory: VIVO Y95 (Model: BOX MATTE, Qty: 3)",
+            "amount": 870.0,
+            "date": "2025-05-21 20:25:39"
+        },
+        {
+            "id": "1449feeb-5d25-49c7-be03-6924c588f6bd",
+            "category": "Inventory Purchase",
+            "description": "Accessory: samsung A50 (Model: silicon, Qty: 1)",
+            "amount": 290.0,
+            "date": "2025-05-21 20:26:22"
+        },
+        {
+            "id": "ed08e269-63b6-4f00-9ce5-dd0c80285a8e",
+            "category": "Inventory Purchase",
+            "description": "Accessory: samsung A32 (Model: silicon, Qty: 2)",
+            "amount": 580.0,
+            "date": "2025-05-21 20:26:57"
+        },
+        {
+            "id": "4544b025-0f77-4a22-9c9d-d9594a8eb74c",
+            "category": "Inventory Purchase",
+            "description": "Accessory: samsung S21+ (Model: leather case, Qty: 5)",
+            "amount": 2000.0,
+            "date": "2025-05-21 20:28:31"
+        },
+        {
+            "id": "a5d2058b-ab57-4f79-bca3-6974b3e2ea0c",
+            "category": "Inventory Purchase",
+            "description": "Accessory: REDMI NOTE 12 (Model: BOX MATTE, Qty: 3)",
+            "amount": 870.0,
+            "date": "2025-05-21 20:29:03"
+        },
+        {
+            "id": "aef0ac92-1666-4c82-8421-79a94249fa1b",
+            "category": "Inventory Purchase",
+            "description": "Accessory: REDMI A2+ (Model: BOX MATTE, Qty: 3)",
+            "amount": 870.0,
+            "date": "2025-05-21 20:29:28"
+        },
+        {
+            "id": "46c9669c-fc04-4d35-9aeb-df6a1fd51592",
+            "category": "Inventory Purchase",
+            "description": "Accessory: IT A23 (Model: BOX MATTE, Qty: 3)",
+            "amount": 870.0,
+            "date": "2025-05-21 20:29:50"
+        },
+        {
+            "id": "2c4c9335-55b9-4287-bd19-e85dc881e584",
+            "category": "Inventory Purchase",
+            "description": "Accessory: IT A60 (Model: BOX MATTE, Qty: 2)",
+            "amount": 580.0,
+            "date": "2025-05-21 20:30:26"
+        },
+        {
+            "id": "01af1430-cb99-4e70-b5fb-b7a593f4b42f",
+            "category": "Inventory Purchase",
+            "description": "Accessory: pixel 7 (Model: silicon, Qty: 1)",
+            "amount": 290.0,
+            "date": "2025-05-21 20:31:02"
+        },
+        {
+            "id": "82e23d66-f97b-424f-b562-dd1b48298657",
+            "category": "Inventory Purchase",
+            "description": "Accessory: pixel 5 (Model: silicon, Qty: 1)",
+            "amount": 500.0,
+            "date": "2025-05-21 20:31:27"
+        },
+        {
+            "id": "16722787-165d-48a2-bd3e-b6f81fcb8732",
+            "category": "Inventory Purchase",
+            "description": "Accessory: REDMI 8 (Model: BOX MATTE, Qty: 3)",
+            "amount": 870.0,
+            "date": "2025-05-21 20:31:52"
+        },
+        {
+            "id": "0fd97871-d3b4-4de2-a973-65458013b33f",
+            "category": "Inventory Purchase",
+            "description": "Accessory: SPARK 10C (Model: BOX MATTE, Qty: 3)",
+            "amount": 870.0,
+            "date": "2025-05-21 20:32:20"
+        },
+        {
+            "id": "18908116-3819-460e-9cc7-a64eecc0310e",
+            "category": "Inventory Purchase",
+            "description": "Accessory: SPARK 8C (Model: BOX MATTE, Qty: 3)",
+            "amount": 870.0,
+            "date": "2025-05-21 20:32:54"
+        },
+        {
+            "id": "bc6fb4d9-f47d-4bb9-9f2a-5e1939d6f97b",
+            "category": "Inventory Purchase",
+            "description": "Accessory: X9C (Model: BOX MATTE, Qty: 1)",
+            "amount": 290.0,
+            "date": "2025-05-21 20:33:32"
+        },
+        {
+            "id": "15f05b39-c52e-4923-abd2-a19f288a0e46",
+            "category": "Inventory Purchase",
+            "description": "Accessory: REDMI 13C (Model: BOX MATTE, Qty: 3)",
+            "amount": 870.0,
+            "date": "2025-05-21 20:33:59"
+        },
+        {
+            "id": "e3939788-c73f-4d28-8ce3-b12f6bbbc418",
+            "category": "Inventory Purchase",
+            "description": "Accessory: REDMI 13C (Model: AUTO FOCUS, Qty: 3)",
+            "amount": 1170.0,
+            "date": "2025-05-21 20:34:28"
+        },
+        {
+            "id": "5f07b8d5-08e4-4be1-a997-c4c8190d64a9",
+            "category": "Inventory Purchase",
+            "description": "Accessory: samsung A72  (Model: leather case, Qty: 7)",
+            "amount": 2800.0,
+            "date": "2025-05-21 20:34:58"
+        },
+        {
+            "id": "7ddcd17e-1338-40de-aa50-a02ed70ed991",
+            "category": "Inventory Purchase",
+            "description": "Accessory: samsung A52 (Model: leather case, Qty: 5)",
+            "amount": 2000.0,
+            "date": "2025-05-21 20:35:32"
+        },
+        {
+            "id": "803b5117-9927-4a7f-9184-74507cc9a70c",
+            "category": "Inventory Purchase",
+            "description": "Accessory: samsung A32 4G (Model: leather case, Qty: 2)",
+            "amount": 800.0,
+            "date": "2025-05-21 20:36:38"
+        },
+        {
+            "id": "d276949a-abe5-4b54-b768-f75bf21f2457",
+            "category": "Inventory Purchase",
+            "description": "Accessory: REDMI NOTE 9 (Model: leather case, Qty: 9)",
+            "amount": 3600.0,
+            "date": "2025-05-21 20:37:07"
+        },
+        {
+            "id": "d00eb9a4-5a77-45d9-8dc0-b2413850e007",
+            "category": "Inventory Purchase",
+            "description": "Accessory: samsung S10+ (Model: leather case, Qty: 14)",
+            "amount": 5600.0,
+            "date": "2025-05-21 20:37:45"
+        },
+        {
+            "id": "f8da80f9-d355-4787-b1f1-e11211e3a59f",
+            "category": "Inventory Purchase",
+            "description": "Accessory: oppo a53 (Model: leather case, Qty: 2)",
+            "amount": 800.0,
+            "date": "2025-05-21 20:38:07"
+        },
+        {
+            "id": "91ed6d2f-ef06-4918-ab5f-eef867443303",
+            "category": "Inventory Purchase",
+            "description": "Accessory: samsung A03 core (Model: BOX MATTE, Qty: 1)",
+            "amount": 290.0,
+            "date": "2025-05-21 20:38:31"
+        },
+        {
+            "id": "e73a07aa-1831-4738-a56b-5d641f4e2c4a",
+            "category": "Inventory Purchase",
+            "description": "Accessory: samsung A10 (Model: BOX MATTE, Qty: 3)",
+            "amount": 870.0,
+            "date": "2025-05-21 20:38:49"
+        },
+        {
+            "id": "7bd6a91d-48cd-4958-baa4-7da00bde93a3",
+            "category": "Inventory Purchase",
+            "description": "Accessory: ZTE A51 (Model: silicon, Qty: 1)",
+            "amount": 290.0,
+            "date": "2025-05-21 20:39:10"
+        },
+        {
+            "id": "54fc3210-56d1-449b-9f92-0e091cc81d7c",
+            "category": "Inventory Purchase",
+            "description": "Accessory: REDMI NOTE 11 (Model: BOX MATTE, Qty: 1)",
+            "amount": 290.0,
+            "date": "2025-05-21 20:39:31"
+        },
+        {
+            "id": "24c78d5b-5c48-46f6-92f4-1e7a4a3f8a73",
+            "category": "Inventory Purchase",
+            "description": "Accessory: VIVO Y93 (Model: BOX MATTE, Qty: 2)",
+            "amount": 580.0,
+            "date": "2025-05-21 20:39:50"
+        },
+        {
+            "id": "6f387d67-9eb9-48bc-8903-68e0bccf480e",
+            "category": "Inventory Purchase",
+            "description": "Accessory: samsung A55 (Model: AUTO FOCUS, Qty: 3)",
+            "amount": 1170.0,
+            "date": "2025-05-21 20:40:20"
+        },
+        {
+            "id": "855189c0-9a7c-48fe-a0c1-304b394e3ff1",
+            "category": "Inventory Purchase",
+            "description": "Accessory: oppo A9 (Model: BOX MATTE, Qty: 3)",
+            "amount": 870.0,
+            "date": "2025-05-21 20:40:53"
+        },
+        {
+            "id": "b0d412cd-b18e-4689-9f6b-63fa170b7447",
+            "category": "Inventory Purchase",
+            "description": "Accessory: oppo A37 (Model: BOX MATTE, Qty: 2)",
+            "amount": 580.0,
+            "date": "2025-05-21 20:41:28"
+        },
+        {
+            "id": "b7455956-f861-4ce3-9f01-30c65c0f63f0",
+            "category": "Inventory Purchase",
+            "description": "Accessory: REDMI A3 (Model: AUTO FOCUS, Qty: 3)",
+            "amount": 1170.0,
+            "date": "2025-05-21 20:41:49"
+        },
+        {
+            "id": "0ccb6e6f-213f-45d7-88be-e80ea4950665",
+            "category": "Inventory Purchase",
+            "description": "Accessory: REDMI A3 (Model: BOX MATTE, Qty: 3)",
+            "amount": 870.0,
+            "date": "2025-05-21 20:42:19"
+        },
+        {
+            "id": "6a010ec0-a8ae-4823-9dae-82d84b6a050e",
+            "category": "Inventory Purchase",
+            "description": "Accessory: REDMI A3 (Model: JINGEL , Qty: 1)",
+            "amount": 300.0,
+            "date": "2025-05-21 20:43:00"
+        },
+        {
+            "id": "061a282c-e5c0-435a-afdc-39eab6158493",
+            "category": "Inventory Purchase",
+            "description": "Accessory: samsung A05 (Model: JINGEL , Qty: 2)",
+            "amount": 600.0,
+            "date": "2025-05-21 20:43:45"
+        },
+        {
+            "id": "ef5c0725-385f-461a-b9ae-7f7f3fbca4fc",
+            "category": "Inventory Purchase",
+            "description": "Accessory: SAMSUNG AO5 (Model: BOX MATTE, Qty: 2)",
+            "amount": 580.0,
+            "date": "2025-05-21 20:45:03"
+        },
+        {
+            "id": "972a2579-688f-44bb-ba93-6831a23dc60f",
+            "category": "Inventory Purchase",
+            "description": "Accessory: samsung A05 (Model: AUTO FOCUS, Qty: 2)",
+            "amount": 780.0,
+            "date": "2025-05-21 20:45:37"
+        },
+        {
+            "id": "f27bcfa7-e1fa-4c70-93ca-584cdf45f498",
+            "category": "Inventory Purchase",
+            "description": "Accessory: samsung M02  (Model: JINGEL , Qty: 3)",
+            "amount": 900.0,
+            "date": "2025-05-21 20:46:03"
+        },
+        {
+            "id": "12429f97-eb95-46ca-8a28-6f0505d72394",
+            "category": "Inventory Purchase",
+            "description": "Accessory: samsung M02  (Model: AUTO FOCUS, Qty: 2)",
+            "amount": 780.0,
+            "date": "2025-05-21 20:46:25"
+        },
+        {
+            "id": "958c6574-6118-42f3-9643-c74f753b9398",
+            "category": "Inventory Purchase",
+            "description": "Accessory: REDMI NOTE 8 (Model: leather case, Qty: 4)",
+            "amount": 1600.0,
+            "date": "2025-05-21 20:46:53"
+        },
+        {
+            "id": "b68e50b2-b070-4e0b-9bdd-a607f21df34d",
+            "category": "Inventory Purchase",
+            "description": "Accessory: AIR POD PRO  (Model: ANC , Qty: 3)",
+            "amount": 2700.0,
+            "date": "2025-05-21 20:54:04"
+        },
+        {
+            "id": "481304e5-9e8c-4a78-a480-878792af6d96",
+            "category": "Inventory Purchase",
+            "description": "Accessory: AIR POD  (Model: PRO, Qty: 3)",
+            "amount": 7050.0,
+            "date": "2025-05-21 20:54:51"
+        },
+        {
+            "id": "59cb8fd7-2b80-488e-8aba-1ff7e267504d",
+            "category": "Inventory Purchase",
+            "description": "Accessory: AIR POD  (Model: PRO 2, Qty: 9)",
+            "amount": 17010.0,
+            "date": "2025-05-21 20:56:08"
+        },
+        {
+            "id": "746f7e44-0133-4571-9659-55e450fdfb81",
+            "category": "Inventory Purchase",
+            "description": "Accessory: HAING Hi  (Model: J96, Qty: 3)",
+            "amount": 8700.0,
+            "date": "2025-05-21 20:58:02"
+        },
+        {
+            "id": "bbb1255a-da70-4820-b3a7-b455ba2917f5",
+            "category": "Inventory Purchase",
+            "description": "Accessory: HAING Hi  (Model: J56, Qty: 2)",
+            "amount": 6400.0,
+            "date": "2025-05-21 20:58:29"
+        },
+        {
+            "id": "3205d73d-0870-44c4-a4dc-3721390ea9ed",
+            "category": "Inventory Purchase",
+            "description": "Accessory: HAING Hi  (Model: J56, Qty: 1)",
+            "amount": 3200.0,
+            "date": "2025-05-21 21:00:01"
+        },
+        {
+            "id": "43ababd3-e408-47a9-ab79-f947f467f8ff",
+            "category": "Inventory Purchase",
+            "description": "Accessory: SAMSUNG BUDS + (Model: GALAXY, Qty: 1)",
+            "amount": 1800.0,
+            "date": "2025-05-21 21:06:52"
+        },
+        {
+            "id": "992d8e19-8edb-407c-8dba-e9ed84389758",
+            "category": "Inventory Purchase",
+            "description": "Accessory: 20W IPHONE DOC REDINGTON (Model: T063, Qty: 1)",
+            "amount": 1500.0,
+            "date": "2025-05-21 21:08:42"
+        }
+    ],
+    "daily_summary": {}
+}

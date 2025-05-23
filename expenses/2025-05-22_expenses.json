@@ -1,0 +1,621 @@
+{
+    "expenses": [
+        {
+            "id": "9c45bd91-1cb6-4583-b677-eb7bcdcc1fa6",
+            "category": "Borrowed Item Purchase",
+            "description": "Borrowed Accessory: Redmi A5 (Model: 862784076882246)",
+            "amount": 26500.0,
+            "date": "2025-05-22 12:21:49"
+        },
+        {
+            "id": "377e4b43-b6b3-4ee5-ac7e-9ba39d2cfe19",
+            "category": "Borrowed Item Purchase",
+            "description": "Borrowed Screen Guard: Redmi A5 (Model: Tempered)",
+            "amount": 150.0,
+            "date": "2025-05-22 12:21:49"
+        },
+        {
+            "id": "6e0f2901-320f-45cf-860a-b1229a6fac6f",
+            "category": "Borrowed Item Purchase",
+            "description": "Borrowed Other: M01 core (Model: Battery)",
+            "amount": 1850.0,
+            "date": "2025-05-22 12:24:44"
+        },
+        {
+            "id": "f4e3553f-c8fc-452f-936b-ba04ba364e53",
+            "category": "Maintenance",
+            "description": "Bill charge",
+            "amount": 40.0,
+            "date": "2025-05-22 12:42:10"
+        },
+        {
+            "id": "d5dd96f1-ea9a-4717-b7ec-a065863c1526",
+            "category": "Inventory Purchase",
+            "description": "Accessory: 20W IPHONE DOC Adapter (Model: T059, Qty: 2)",
+            "amount": 7000.0,
+            "date": "2025-05-22 12:53:29"
+        },
+        {
+            "id": "60accae3-0fae-47de-9690-933ea58267e3",
+            "category": "Inventory Purchase",
+            "description": "Accessory: 35W ADAPTER (Model: APPLE, Qty: 4)",
+            "amount": 10000.0,
+            "date": "2025-05-22 12:54:30"
+        },
+        {
+            "id": "99d87860-069c-4483-a084-e2033a6e1ccd",
+            "category": "Inventory Purchase",
+            "description": "Accessory: 2OW  (Model: REDINGTON, Qty: 5)",
+            "amount": 7500.0,
+            "date": "2025-05-22 12:57:13"
+        },
+        {
+            "id": "70602caf-4539-4be5-b07a-699e78d44064",
+            "category": "Inventory Purchase",
+            "description": "Accessory: IPHONE ADAPTER 20W (Model: AAA, Qty: 2)",
+            "amount": 5800.0,
+            "date": "2025-05-22 13:37:21"
+        },
+        {
+            "id": "2d59d72c-ead9-48ca-9ba9-22bc71a49012",
+            "category": "Inventory Purchase",
+            "description": "Accessory: IPHONE ADAPTER 20W (Model: ORIGINAL 100%, Qty: 4)",
+            "amount": 20000.0,
+            "date": "2025-05-22 13:38:47"
+        },
+        {
+            "id": "89f600ae-788f-4689-9411-dc9f0dd39f44",
+            "category": "Inventory Purchase",
+            "description": "Accessory: SAMSUNG 25W (Model: NB0009, Qty: 7)",
+            "amount": 7000.0,
+            "date": "2025-05-22 13:42:57"
+        },
+        {
+            "id": "3c570c46-3225-45e9-87ee-addb757d852c",
+            "category": "Inventory Purchase",
+            "description": "Accessory: 25W SAMSUNG (Model: ORG , Qty: 1)",
+            "amount": 2500.0,
+            "date": "2025-05-22 13:43:28"
+        },
+        {
+            "id": "dc9ba6aa-d9aa-466e-a3bc-8f3c997ca198",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 7 & 8 & SE (Model: Super D, Qty: 2)",
+            "amount": 240.0,
+            "date": "2025-05-22 14:01:41"
+        },
+        {
+            "id": "9fd317c5-23b2-487d-9818-e5c0290c0737",
+            "category": "Borrowed Item Purchase",
+            "description": "Borrowed Back Cover: Iphone SE (Model: magsafe tpu)",
+            "amount": 500.0,
+            "date": "2025-05-22 14:03:35"
+        },
+        {
+            "id": "c812168b-d5db-4c33-94eb-064986b9f97a",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone7&8&se2 white (Model: Super D, Qty: 12)",
+            "amount": 1440.0,
+            "date": "2025-05-22 15:05:56"
+        },
+        {
+            "id": "b89cdbe3-9f8f-4c8e-ae69-585e93d5468c",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 7&8&se2 WHITE (Model: max hd+ , Qty: 1)",
+            "amount": 100.0,
+            "date": "2025-05-22 15:07:30"
+        },
+        {
+            "id": "0d4eef84-b4bf-4d9e-b35c-c27c95ef2218",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 7 plus & 8 plus BLACK (Model: Super D, Qty: 1)",
+            "amount": 120.0,
+            "date": "2025-05-22 15:14:11"
+        },
+        {
+            "id": "a4377815-da0d-4360-b9b0-e6a3f0a5844c",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 7 plus & 8 plus BLACK (Model: max hd+ , Qty: 9)",
+            "amount": 900.0,
+            "date": "2025-05-22 15:14:54"
+        },
+        {
+            "id": "0d9800c0-e3f0-4031-b93d-552889e87419",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 7 plus & 8 plus WHITE (Model: Super D, Qty: 1)",
+            "amount": 120.0,
+            "date": "2025-05-22 15:16:26"
+        },
+        {
+            "id": "32918464-2ebd-4e20-8f02-4752f449d80e",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 7 plus & 8 plus BLACK (Model: PRIVACY, Qty: 1)",
+            "amount": 500.0,
+            "date": "2025-05-22 15:17:16"
+        },
+        {
+            "id": "0c0da5b5-cd30-4802-bc64-69b3e44e0b66",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone XR\\11 (Model: Super D, Qty: 3)",
+            "amount": 360.0,
+            "date": "2025-05-22 15:20:24"
+        },
+        {
+            "id": "b9636c64-bc2c-4ea6-a2d4-8a8cebe2e4f8",
+            "category": "Inventory Purchase",
+            "description": "Accessory: IPHONE XR & 11 (Model: max hd+ , Qty: 10)",
+            "amount": 1000.0,
+            "date": "2025-05-22 15:21:17"
+        },
+        {
+            "id": "f9fcb940-cdc8-47fc-8efd-61de87b6572d",
+            "category": "Inventory Purchase",
+            "description": "Accessory: IPHONE XS & X (Model: Super D, Qty: 4)",
+            "amount": 480.0,
+            "date": "2025-05-22 15:21:57"
+        },
+        {
+            "id": "e5950da2-015d-4194-a646-d0da189809f0",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone x & xs (Model: max hd+ , Qty: 5)",
+            "amount": 500.0,
+            "date": "2025-05-22 15:22:31"
+        },
+        {
+            "id": "4a3d4874-3c20-49a1-9088-5c802a02f989",
+            "category": "Inventory Purchase",
+            "description": "Accessory: IPHONE X & XS (Model: anti, Qty: 1)",
+            "amount": 150.0,
+            "date": "2025-05-22 15:23:19"
+        },
+        {
+            "id": "176f1564-ba02-4b97-a695-973b4075d04e",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone xs max & 11 pro max (Model: Super D, Qty: 5)",
+            "amount": 600.0,
+            "date": "2025-05-22 15:24:42"
+        },
+        {
+            "id": "bc9f219c-c64f-487f-ab88-96901acad8a5",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone xs max & 11 pro max (Model: super curve, Qty: 5)",
+            "amount": 700.0,
+            "date": "2025-05-22 15:25:17"
+        },
+        {
+            "id": "bd92aba5-0e57-45bb-b22a-81618235bd52",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone xs max & 11 pro max (Model: max hd+ , Qty: 7)",
+            "amount": 840.0,
+            "date": "2025-05-22 15:26:10"
+        },
+        {
+            "id": "cca1f3ab-d8b7-4f0b-953f-2e4f1619d94c",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 12 and 12 pro (Model: max hd+ , Qty: 4)",
+            "amount": 480.0,
+            "date": "2025-05-22 15:26:44"
+        },
+        {
+            "id": "3d95e44f-f692-46e8-a47a-95760854d0b7",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 12 & 12 pro (Model: Super D, Qty: 1)",
+            "amount": 120.0,
+            "date": "2025-05-22 15:27:22"
+        },
+        {
+            "id": "2aaf9e5c-6152-4816-a656-56794db2de92",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 12 mini (Model: Super D, Qty: 10)",
+            "amount": 1200.0,
+            "date": "2025-05-22 15:27:49"
+        },
+        {
+            "id": "ee017881-879b-4eb2-b382-70dcebaadcd4",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 12 pro max (Model: Super D, Qty: 3)",
+            "amount": 360.0,
+            "date": "2025-05-22 15:29:12"
+        },
+        {
+            "id": "fb0cde04-1ada-4e53-9655-ad8ec9aa935c",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 13 pro max (Model: Super D, Qty: 4)",
+            "amount": 480.0,
+            "date": "2025-05-22 15:30:21"
+        },
+        {
+            "id": "bdf82eb0-a95e-4534-889c-992f1b70e3df",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 14 pro (Model: Super D, Qty: 3)",
+            "amount": 360.0,
+            "date": "2025-05-22 15:31:02"
+        },
+        {
+            "id": "3e7f0aa0-998c-40d7-bc9f-9a3c8d19a662",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 14 pro (Model: super curve, Qty: 1)",
+            "amount": 400.0,
+            "date": "2025-05-22 15:31:31"
+        },
+        {
+            "id": "6c0a0c28-dc70-4a64-b59e-de8fe6705d63",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 14 pro max (Model: Super D, Qty: 5)",
+            "amount": 600.0,
+            "date": "2025-05-22 15:32:06"
+        },
+        {
+            "id": "f5db210f-0ef9-4a97-adf7-096fb06f9c2d",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 15 & 16 (Model: Super D, Qty: 9)",
+            "amount": 1080.0,
+            "date": "2025-05-22 15:33:49"
+        },
+        {
+            "id": "be2df020-52f0-4902-ac6f-ad20284b9609",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 15 pro & 16 pro (Model: super curve, Qty: 3)",
+            "amount": 1200.0,
+            "date": "2025-05-22 15:37:18"
+        },
+        {
+            "id": "0a45e010-34dc-404a-82bf-def601fec3d3",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 15 pro & 16 pro (Model: PRIVACY, Qty: 2)",
+            "amount": 1000.0,
+            "date": "2025-05-22 15:38:22"
+        },
+        {
+            "id": "ac45de35-2484-4893-85a7-ca418fb5dc07",
+            "category": "Electricity",
+            "description": "Home",
+            "amount": 20500.0,
+            "date": "2025-05-22 15:38:47"
+        },
+        {
+            "id": "020b2c44-662a-4242-b227-b576ddb9efc6",
+            "category": "Borrowed Item Purchase",
+            "description": "Borrowed Other: huawei y7A (Model: LCD repair)",
+            "amount": 3750.0,
+            "date": "2025-05-22 15:44:19"
+        },
+        {
+            "id": "4a71105d-d90c-449e-bfea-893112182c7c",
+            "category": "Borrowed Item Purchase",
+            "description": "Borrowed Back Cover: Huawei Y7A (Model: Silicon)",
+            "amount": 300.0,
+            "date": "2025-05-22 15:44:19"
+        },
+        {
+            "id": "a0a4458d-ae49-405c-b170-58d98cae543b",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 15 pro & 16 pro (Model: Super D, Qty: 7)",
+            "amount": 840.0,
+            "date": "2025-05-22 15:52:51"
+        },
+        {
+            "id": "47680d5e-6f62-453a-9207-a266a1cad0df",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 15 pro max (Model: Super D, Qty: 4)",
+            "amount": 480.0,
+            "date": "2025-05-22 15:53:24"
+        },
+        {
+            "id": "c8ead750-c166-44c7-bfc4-b4668cb83735",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 15 pro max (Model: PRIVACY, Qty: 1)",
+            "amount": 500.0,
+            "date": "2025-05-22 15:54:10"
+        },
+        {
+            "id": "4bc82a47-a784-422b-a4a2-a25c9e9ab581",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 15 plus + (Model: Gorilla, Qty: 1)",
+            "amount": 300.0,
+            "date": "2025-05-22 15:55:51"
+        },
+        {
+            "id": "223a05b7-ebbf-4e86-be7d-1414f0f26b27",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 16 pro (Model: Super D, Qty: 9)",
+            "amount": 1080.0,
+            "date": "2025-05-22 15:56:18"
+        },
+        {
+            "id": "d33c2dc2-a345-43a9-a1de-333719aa2a0c",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 16 pro (Model: super curve, Qty: 2)",
+            "amount": 800.0,
+            "date": "2025-05-22 15:57:14"
+        },
+        {
+            "id": "4785af19-1820-4813-ac55-225608d02fde",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 16 pro max (Model: Super D, Qty: 9)",
+            "amount": 1080.0,
+            "date": "2025-05-22 15:57:50"
+        },
+        {
+            "id": "0789dfbc-a8ec-4dfa-bed0-9493fc474950",
+            "category": "Inventory Purchase",
+            "description": "Accessory: iphone 16 pro max (Model: super curve, Qty: 3)",
+            "amount": 1200.0,
+            "date": "2025-05-22 15:58:12"
+        },
+        {
+            "id": "9a0e7306-b16b-4bc6-919f-eda9d45e91a7",
+            "category": "Inventory Purchase",
+            "description": "Accessory: Samsung A20s & redmi 9 & poco m3 (Model: MTB, Qty: 9)",
+            "amount": 900.0,
+            "date": "2025-05-22 15:59:45"
+        },
+        {
+            "id": "f1280599-009c-4898-aa14-c6307fc23d1f",
+            "category": "Inventory Purchase",
+            "description": "Accessory: samsung A2 core & j2 core (Model: MTB, Qty: 10)",
+            "amount": 1000.0,
+            "date": "2025-05-22 16:00:21"
+        },
+        {
+            "id": "9e2a96a9-16ac-46e1-a1c2-542632542d3c",
+            "category": "Inventory Purchase",
+            "description": "Accessory: Samsung A11 & M11 (Model: MTB, Qty: 6)",
+            "amount": 600.0,
+            "date": "2025-05-22 16:00:58"
+        },
+        {
+            "id": "753d6e5d-a79e-4b48-b8f9-daae44ba313c",
+            "category": "Inventory Purchase",
+            "description": "Accessory: samsung A20 & A30 (Model: MTB, Qty: 6)",
+            "amount": 600.0,
+            "date": "2025-05-22 16:01:23"
+        },
+        {
+            "id": "2c144b6c-3a31-43a5-b315-9605194854d8",
+            "category": "Inventory Purchase",
+            "description": "Accessory: samsung a54 & s23FE (Model: MTB, Qty: 10)",
+            "amount": 1000.0,
+            "date": "2025-05-22 16:01:46"
+        },
+        {
+            "id": "b6e678d6-637e-479e-ae64-74339c94691f",
+            "category": "Inventory Purchase",
+            "description": "Accessory: samsung A71 (Model: MTB, Qty: 4)",
+            "amount": 400.0,
+            "date": "2025-05-22 16:02:00"
+        },
+        {
+            "id": "1fad8a48-fb51-4fd7-9ef8-7efed5684629",
+            "category": "Inventory Purchase",
+            "description": "Accessory: samsung A21s (Model: MTB, Qty: 7)",
+            "amount": 700.0,
+            "date": "2025-05-22 16:02:24"
+        },
+        {
+            "id": "0e873cc5-729f-4b3f-947e-23379b652fa1",
+            "category": "Inventory Purchase",
+            "description": "Accessory: samsung a35 & a55 (Model: MTB, Qty: 9)",
+            "amount": 900.0,
+            "date": "2025-05-22 16:02:40"
+        },
+        {
+            "id": "7093d312-6783-446a-90c7-8b7227b057dc",
+            "category": "Inventory Purchase",
+            "description": "Accessory: samsung M02 & A12 & A13 & A23 (Model: MTB, Qty: 6)",
+            "amount": 600.0,
+            "date": "2025-05-22 16:03:37"
+        },
+        {
+            "id": "f272234f-5d13-41ff-96c4-4dcf030b7c4f",
+            "category": "Inventory Purchase",
+            "description": "Accessory: samsung M02 & A12 & A13 & A23 (Model: PRIVACY, Qty: 7)",
+            "amount": 3500.0,
+            "date": "2025-05-22 16:04:01"
+        },
+        {
+            "id": "82229d79-dee3-45a2-b359-f6cc0443451f",
+            "category": "Inventory Purchase",
+            "description": "Accessory: samsung M02 & A12 & A13 & A23 (Model: matte, Qty: 3)",
+            "amount": 900.0,
+            "date": "2025-05-22 16:04:33"
+        },
+        {
+            "id": "e3376972-7198-49fd-b513-eac65de49758",
+            "category": "Inventory Purchase",
+            "description": "Accessory: samsung j6 + plus & j4 + plus (Model: MTB, Qty: 8)",
+            "amount": 800.0,
+            "date": "2025-05-22 16:05:06"
+        },
+        {
+            "id": "352815ce-e5fb-4549-9827-b44cc2e9047a",
+            "category": "Inventory Purchase",
+            "description": "Accessory: samsung A15 (Model: MTB, Qty: 2)",
+            "amount": 200.0,
+            "date": "2025-05-22 16:05:23"
+        },
+        {
+            "id": "b9eff32f-ec56-4463-b391-5b83f9d24720",
+            "category": "Borrowed Item Purchase",
+            "description": "Borrowed Other: JBL (Model: speaker)",
+            "amount": 3750.0,
+            "date": "2025-05-22 16:12:56"
+        },
+        {
+            "id": "f6623714-09f6-49d9-bcf5-ee48c529b785",
+            "category": "Inventory Purchase",
+            "description": "Accessory: celebrat (Model: g4, Qty: 5)",
+            "amount": 1750.0,
+            "date": "2025-05-22 16:21:24"
+        },
+        {
+            "id": "99be8cf0-67e4-490b-82ba-e40396bc8f06",
+            "category": "Inventory Purchase",
+            "description": "Accessory: celebrat (Model: D1, Qty: 3)",
+            "amount": 1200.0,
+            "date": "2025-05-22 16:21:51"
+        },
+        {
+            "id": "e848b29d-e53b-40ab-9cc9-508ad4352173",
+            "category": "Inventory Purchase",
+            "description": "Accessory: celebrat (Model: D2, Qty: 4)",
+            "amount": 1600.0,
+            "date": "2025-05-22 16:22:05"
+        },
+        {
+            "id": "8223ecb3-0e10-432a-82bd-f0e6b5be1c9d",
+            "category": "Inventory Purchase",
+            "description": "Accessory: celebrat (Model: G13, Qty: 3)",
+            "amount": 1125.0,
+            "date": "2025-05-22 16:22:54"
+        },
+        {
+            "id": "7c5eea19-d492-43c5-8fc4-d20de0802bda",
+            "category": "Inventory Purchase",
+            "description": "Accessory: celebrat (Model: G3, Qty: 5)",
+            "amount": 2000.0,
+            "date": "2025-05-22 16:23:20"
+        },
+        {
+            "id": "b1cf7b15-31f0-4fcc-b5cb-cbad1a6dbe3c",
+            "category": "Inventory Purchase",
+            "description": "Accessory: celebrat (Model: D7, Qty: 5)",
+            "amount": 4750.0,
+            "date": "2025-05-22 16:23:46"
+        },
+        {
+            "id": "1d25f3c8-2112-4393-bba4-2d4c228c427e",
+            "category": "Inventory Purchase",
+            "description": "Accessory: celebrat (Model: G2, Qty: 5)",
+            "amount": 4625.0,
+            "date": "2025-05-22 16:24:01"
+        },
+        {
+            "id": "6475c8b8-dda7-48a2-a0f4-1ee4955d2c08",
+            "category": "Inventory Purchase",
+            "description": "Accessory: celebrat (Model: G6, Qty: 1)",
+            "amount": 575.0,
+            "date": "2025-05-22 16:24:35"
+        },
+        {
+            "id": "c367de10-eb74-4471-953c-c35a9d3b2df9",
+            "category": "Other",
+            "description": "Ubi",
+            "amount": 50.0,
+            "date": "2025-05-22 16:25:26"
+        },
+        {
+            "id": "1dc77f03-0b20-4878-9f15-1bb79572e09a",
+            "category": "Inventory Purchase",
+            "description": "Accessory: Boxu cable (Model: CA-001, Qty: 10)",
+            "amount": 700.0,
+            "date": "2025-05-22 16:33:43"
+        },
+        {
+            "id": "ab656b59-a47e-4bc4-8e51-c825fb653ba6",
+            "category": "Inventory Purchase",
+            "description": "Accessory: Boxu cable (Model: CA-B001, Qty: 10)",
+            "amount": 700.0,
+            "date": "2025-05-22 16:34:22"
+        },
+        {
+            "id": "4c29364d-37d1-4384-b063-ee4adba92abe",
+            "category": "Inventory Purchase",
+            "description": "Accessory: celebrat (Model: G12, Qty: 5)",
+            "amount": 3375.0,
+            "date": "2025-05-22 16:35:52"
+        },
+        {
+            "id": "c637c44d-ea35-4b40-90d9-5f24e54e4d40",
+            "category": "Inventory Purchase",
+            "description": "Accessory: celebrat (Model: FLY1, Qty: 5)",
+            "amount": 4250.0,
+            "date": "2025-05-22 16:36:12"
+        },
+        {
+            "id": "d6b0ab4c-ff14-4c0d-adc4-43ce77092ec3",
+            "category": "Inventory Purchase",
+            "description": "Accessory: Cokike (Model: M6, Qty: 4)",
+            "amount": 3400.0,
+            "date": "2025-05-22 16:37:22"
+        },
+        {
+            "id": "9b978e04-d3cd-4a04-be19-a8b70bda0e6f",
+            "category": "Inventory Purchase",
+            "description": "Accessory: Yison (Model: X1, Qty: 5)",
+            "amount": 2375.0,
+            "date": "2025-05-22 16:37:40"
+        },
+        {
+            "id": "18d80e08-9a69-4ebe-a2c6-7ec31ab05dd7",
+            "category": "Inventory Purchase",
+            "description": "Accessory: Yison (Model: X2, Qty: 5)",
+            "amount": 3000.0,
+            "date": "2025-05-22 16:38:01"
+        },
+        {
+            "id": "db00f69c-07b7-4e45-ade3-03b452c806cb",
+            "category": "Inventory Purchase",
+            "description": "Accessory: Yison (Model: X4, Qty: 3)",
+            "amount": 1725.0,
+            "date": "2025-05-22 16:38:16"
+        },
+        {
+            "id": "8eaaeb91-8a99-423a-9b0c-8edae212a58b",
+            "category": "Inventory Purchase",
+            "description": "Accessory: Cokike (Model: C13, Qty: 11)",
+            "amount": 3850.0,
+            "date": "2025-05-22 16:39:16"
+        },
+        {
+            "id": "09c7b537-c6d2-41df-b4f9-9f329b454788",
+            "category": "Inventory Purchase",
+            "description": "Accessory: celebrat (Model: a20, Qty: 5)",
+            "amount": 11125.0,
+            "date": "2025-05-22 16:39:35"
+        },
+        {
+            "id": "41ee0792-c13b-4050-b67b-213cb5527cca",
+            "category": "Inventory Purchase",
+            "description": "Accessory: Super Bass (Model: U-7, Qty: 10)",
+            "amount": 2500.0,
+            "date": "2025-05-22 16:41:16"
+        },
+        {
+            "id": "355f691c-5720-457c-8f37-e480cb735110",
+            "category": "Inventory Purchase",
+            "description": "Accessory: Ubon lite (Model: UB-701, Qty: 6)",
+            "amount": 1500.0,
+            "date": "2025-05-22 16:41:55"
+        },
+        {
+            "id": "6aebfc51-b410-4b4d-b0ab-578854e94010",
+            "category": "Inventory Purchase",
+            "description": "Ultra",
+            "amount": 600.0,
+            "date": "2025-05-22 16:46:20"
+        },
+        {
+            "id": "48ee75b2-705d-4063-a395-3825242b01df",
+            "category": "Other",
+            "description": "Seettu",
+            "amount": 2500.0,
+            "date": "2025-05-22 16:46:48"
+        },
+        {
+            "id": "d5c683ed-5098-4282-bf7f-2b0f6b5149a8",
+            "category": "Other",
+            "description": "seettu 2",
+            "amount": 10000.0,
+            "date": "2025-05-22 17:09:20"
+        },
+        {
+            "id": "bffd692d-68df-4ce7-ace2-715a0ec7eaf6",
+            "category": "Borrowed Item Purchase",
+            "description": "Borrowed Back Cover: pixel 7  (Model: TPU)",
+            "amount": 250.0,
+            "date": "2025-05-22 18:00:17"
+        }
+    ],
+    "daily_summary": {}
+}

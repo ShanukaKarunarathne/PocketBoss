@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Sales Management</h1>
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('index') }}">Home</a></li>
+                    <li><a href="{{ url_for('inventory') }}">Inventory</a></li>
+                    <li><a href="{{ url_for('sales') }}">Sales</a></li>
+                    <li><a href="{{ url_for('expenses') }}">Expenses</a></li>
+                    <li><a href="{{ url_for('reports') }}">Reports</a></li>
+                </ul>
+            </nav>
+        </header>
+                
+        <main>
+            <section class="add-sale">
+                <h2>Record New Sale</h2>
+                
+                <div class="action-buttons">
+                    <button class="action-button" id="add-trade-in-btn">Add Trade-in Phone</button>
+                    <button class="action-button secondary" id="add-borrowed-item-btn">Add Borrowed Item</button>
+                </div>
+                
+                <div class="form-group">
+                    <label for="item-search">Search Item (by name, model, IMEI)</label>
+                    <div class="search-container">
+                        <input type="text" id="item-search" placeholder="Start typing to search...">
+                        
+                        <div class="select-container">
+                            <div class="custom-select" id="custom-select">
+                                <!-- Options will be populated by JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cart-items" id="cart-container">
+                    <div class="empty-cart-message" id="empty-cart-message">
+                        No items added to cart yet. Search and add items above.
+                    </div>
+                    <div id="cart-items-list">
+                        <!-- Cart items will be added here by JavaScript -->
+                    </div>
+                    <div class="cart-summary" id="cart-summary" style="display: none;">
+                        Total: <span id="cart-total">Rs.0.00</span>
+                    </div>
+                </div>
+                
+                <form action="{{ url_for('add_multiple_sales') }}" method="post" id="sale-form">
+                    <div class="customer-info" id="customer-info" style="display: none;">
+                        <h3>Customer Information</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="customer_name">Customer Name</label>
+                                <input type="text" id="customer_name" name="customer_name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="customer_phone">Phone Number</label>
+                                <input type="tel" id="customer_phone" name="customer_phone" pattern="[0-9]{10}" title="Please enter a valid 10-digit phone number" required>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <input type="hidden" id="cart-data" name="cart_data" value="">
+                    <input type="hidden" id="trade-in-data" name="trade_in_data" value="">
+                    <input type="hidden" id="borrowed-items-data" name="borrowed_items_data" value="">
+                    <button type="submit" class="btn" id="complete-sale-btn" disabled>Complete Sale & Generate Receipt</button>
+                </form>
+            </section>
+            
+            <!-- Trade-in Modal -->
+            <div id="trade-in-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" id="close-trade-in">&times;</span>
+                    <h3>Add Trade-in Phone</h3>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="trade-in-name">Phone Name</label>
+                            <input type="text" id="trade-in-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="trade-in-model">Model Number</label>
+                            <input type="text" id="trade-in-model" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="trade-in-imei">IMEI Number</label>
+                            <input type="text" id="trade-in-imei" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="trade-in-type">Type</label>
+                            <select id="trade-in-type">
+                                <option value="New">New</option>
+                                <option value="Used" selected>Used</option>
+                                <option value="Refurbished">Refurbished</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="trade-in-price">Trade-in Value (Rs.)</label>
+                            <input type="number" id="trade-in-price" min="0" step="0.01" required>
+                        </div>
+                        <div class="form-group full-width">
+                            <button type="button" id="add-trade-in-to-cart" class="action-button">Add to Transaction</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Borrowed Item Modal -->
+            <div id="borrowed-item-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" id="close-borrowed">&times;</span>
+                    <h3>Add Borrowed Item</h3>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="borrowed-name">Item Name</label>
+                            <input type="text" id="borrowed-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="borrowed-category">Category</label>
+                            <select id="borrowed-category">
+                                <option value="Accessory">Mobile phone</option>
+                                <option value="Accessory">Accessory</option>
+                                <option value="Back Cover" selected>Back Cover</option>
+                                <option value="Screen Guard">Screen Guard</option>
+                                <option value="Charger">Charger</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="borrowed-model">Model Number/Compatibility</label>
+                            <input type="text" id="borrowed-model" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="borrowed-supplier">Supplier/Source</label>
+                            <input type="text" id="borrowed-supplier" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="borrowed-cost">Cost Price (Rs.)</label>
+                            <input type="number" id="borrowed-cost" min="0" step="0.01" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="borrowed-selling">Selling Price (Rs.)</label>
+                            <input type="number" id="borrowed-selling" min="0" step="0.01" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="borrowed-quantity">Quantity</label>
+                            <input type="number" id="borrowed-quantity" min="1" value="1" required>
+                        </div>
+                        <div class="form-group full-width">
+                            <button type="button" id="add-borrowed-to-cart" class="action-button secondary">Add to Transaction</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Receipt Modal -->
+            <div id="receipt-modal" class="modal">
+                <div class="modal-content receipt-modal-content">
+                    <span class="close" id="close-receipt">&times;</span>
+                    <div id="receipt-content">
+                        <!-- Receipt content will be loaded here -->
+                    </div>
+                    <div class="receipt-actions">
+                        <button id="print-receipt" class="action-button">Print Receipt</button>
+                    </div>
+                </div>
+            </div>
+            
+            <section class="sales-list">
+                <h2>Today's Sales</h2>
+                
+                <!-- Add this debug info -->
+                <p>Number of sales: {{ sales|length }}</p>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Customer</th>
+                            <th>Phone</th>
+                            <th>Item</th>
+                            <th>Category</th>
+                            <th>Model</th>
+                            <th>IMEI</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                            <th>Date</th>
+                            <th>Type</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% if sales %}
+                            {% for sale in sales %}
+                            <tr>
+                                <td>{{ sale.id }}</td>
+                                <td>{{ sale.customer_name }}</td>
+                                <td>{{ sale.customer_phone }}</td>
+                                <td>{{ sale.item_name }}</td>
+                                <td>{{ sale.category }}</td>
+                                <td>{{ sale.model_number }}</td>
+                                <td>{{ sale.imei_number if sale.imei_number else 'N/A' }}</td>
+                                <td>{{ sale.quantity }}</td>
+                                <td>Rs.{{ sale.total_price }}</td>
+                                <td>{{ sale.date }}</td>
+                                <td>
+                                    {% if sale.type == 'trade_in' %}
+                                    <span class="item-type-badge trade-in-badge">Trade-in</span>
+                                    {% elif sale.type == 'borrowed_and_sold' %}
+                                    <span class="item-type-badge borrowed-badge">Borrowed</span>
+                                    {% else %}
+                                    <span class="item-type-badge regular-badge">Regular</span>
+                                    {% endif %}
+                                </td>
+                                <td>
+                                    <button class="view-receipt-btn" data-customer="{{ sale.customer_name }}" data-phone="{{ sale.customer_phone }}" data-date="{{ sale.date }}" data-sale-id="{{ sale.id }}">View Receipt</button>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        {% else %}
+                            <tr>
+                                <td colspan="13" class="no-data">No sales recorded today</td>
+                            </tr>
+                        {% endif %}
+                    </tbody>
+                </table>
+            </section>
+        </main>
+        
+        <footer>
+            <p>&copy; 2025 - SK</p>
+        </footer>
+    </div>
+    <script>
+        // DOM Elements
+        const itemSearch = document.getElementById('item-search');
+        const customSelect = document.getElementById('custom-select');
+        const cartItemsList = document.getElementById('cart-items-list');
+        const emptyCartMessage = document.getElementById('empty-cart-message');
+        const cartSummary = document.getElementById('cart-summary');
+        const cartTotal = document.getElementById('cart-total');
+        const cartData = document.getElementById('cart-data');
+        const tradeInData = document.getElementById('trade-in-data');
+        const borrowedItemsData = document.getElementById('borrowed-items-data');
+        const completeSaleBtn = document.getElementById('complete-sale-btn');
+        const customerInfo = document.getElementById('customer-info');
+        
+        // Trade-in Modal Elements
+        const tradeInModal = document.getElementById('trade-in-modal');
+        const addTradeInBtn = document.getElementById('add-trade-in-btn');
+        const closeTradeIn = document.getElementById('close-trade-in');
+        const addTradeInToCart = document.getElementById('add-trade-in-to-cart');
+        
+        // Borrowed Item Modal Elements
+        const borrowedItemModal = document.getElementById('borrowed-item-modal');
+        const addBorrowedItemBtn = document.getElementById('add-borrowed-item-btn');
+        const closeBorrowed = document.getElementById('close-borrowed');
+        const addBorrowedToCart = document.getElementById('add-borrowed-to-cart');
+
+        // Receipt Modal Elements
+        const receiptModal = document.getElementById('receipt-modal');
+        const closeReceipt = document.getElementById('close-receipt');
+        const receiptContent = document.getElementById('receipt-content');
+        const printReceiptBtn = document.getElementById('print-receipt');
+        
+        // Data Storage
+        let inventory = {{ inventory|tojson }};
+        let cart = [];
+        let tradeIns = [];
+        let borrowedItems = [];
+        
+        // Event Listeners
+        itemSearch.addEventListener('input', handleSearch);
+        itemSearch.addEventListener('focus', () => {
+            if (itemSearch.value.length > 0) {
+                customSelect.style.display = 'block';
+            }
+        });
+        
+        document.addEventListener('click', (e) => {
+            if (e.target !== itemSearch && e.target !== customSelect) {
+                customSelect.style.display = 'none';
+            }
+        });
+        
+        // Trade-in Modal Events
+        addTradeInBtn.addEventListener('click', () => {
+            tradeInModal.style.display = 'block';
+        });
+        
+        closeTradeIn.addEventListener('click', () => {
+            tradeInModal.style.display = 'none';
+        });
+        
+        addTradeInToCart.addEventListener('click', addTradeInToTransaction);
+        
+        // Borrowed Item Modal Events
+        addBorrowedItemBtn.addEventListener('click', () => {
+            borrowedItemModal.style.display = 'block';
+        });
+        
+        closeBorrowed.addEventListener('click', () => {
+            borrowedItemModal.style.display = 'none';
+        });
+        
+        addBorrowedToCart.addEventListener('click', addBorrowedItemToTransaction);
+
+        // Receipt Modal Events
+        closeReceipt.addEventListener('click', () => {
+            receiptModal.style.display = 'none';
+        });
+
+        printReceiptBtn.addEventListener('click', () => {
+            const printWindow = window.open('', '_blank');
+            printWindow.document.write('<html><head><title>Receipt</title>');
+            printWindow.document.write('<link rel="stylesheet" href="{{ url_for("static", filename="css/style.css") }}">');
+            printWindow.document.write('<style>body { font-family: Arial, sans-serif; } .receipt-actions { display: none; }</style>');
+            printWindow.document.write('</head><body>');
+            printWindow.document.write(receiptContent.innerHTML);
+            printWindow.document.write('</body></html>');
+            printWindow.document.close();
+            printWindow.focus();
+            setTimeout(() => {
+                printWindow.print();
+                printWindow.close();
+            }, 500);
+        });
+
+        // Add event listeners to view receipt buttons
+        document.querySelectorAll('.view-receipt-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const saleId = this.getAttribute('data-sale-id');
+                const customerName = this.getAttribute('data-customer');
+                const customerPhone = this.getAttribute('data-phone');
+                const saleDate = this.getAttribute('data-date');
+                
+                // Fetch the receipt data for this sale
+                fetchReceiptData(saleId, customerName, customerPhone, saleDate);
+            });
+        });
+        
+        // Form submission
+        document.getElementById('sale-form').addEventListener('submit', function(e) {
+            // Update hidden fields with current data
+            cartData.value = JSON.stringify(cart);
+            tradeInData.value = JSON.stringify(tradeIns);
+            borrowedItemsData.value = JSON.stringify(borrowedItems);
+        });
+        
+        // Functions
+        function handleSearch() {
+            const searchTerm = itemSearch.value.toLowerCase();
+            
+            if (searchTerm.length < 1) {
+                customSelect.style.display = 'none';
+                return;
+            }
+            
+            // Filter inventory based on search term
+            const filteredItems = inventory.filter(item => {
+                return (
+                    item.name.toLowerCase().includes(searchTerm) ||
+                    item.model_number.toLowerCase().includes(searchTerm) ||
+                    (item.imei_number && item.imei_number.toLowerCase().includes(searchTerm))
+                ) && item.quantity > 0; // Only show items with quantity > 0
+            });
+            
+            // Display results
+            if (filteredItems.length > 0) {
+                customSelect.innerHTML = '';
+                filteredItems.forEach(item => {
+                    const option = document.createElement('div');
+                    option.className = 'select-option';
+                    option.innerHTML = `
+                        <strong>${item.name}</strong> - ${item.category}<br>
+                        Model: ${item.model_number}
+                        ${item.imei_number ? `<br>IMEI: ${item.imei_number}` : ''}
+                        <br>Available: ${item.quantity}
+                    `;
+                    option.addEventListener('click', () => {
+                        addToCart(item);
+                        customSelect.style.display = 'none';
+                        itemSearch.value = '';
+                    });
+                    customSelect.appendChild(option);
+                });
+                customSelect.style.display = 'block';
+            } else {
+                customSelect.style.display = 'none';
+            }
+        }
+        
+        function addToCart(item) {
+            // Check if item is already in cart
+            const existingItem = cart.find(cartItem => cartItem.id === item.id);
+            
+            if (existingItem) {
+                // Increase quantity if already in cart
+                if (existingItem.quantity < item.quantity) {
+                    existingItem.quantity += 1;
+                    updateCartDisplay();
+                } else {
+                    alert('Cannot add more of this item. Maximum available quantity reached.');
+                }
+            } else {
+                // Add new item to cart
+                const newItem = {
+                    id: item.id,
+                    name: item.name,
+                    category: item.category,
+                    model_number: item.model_number,
+                    imei_number: item.imei_number || '',
+                    purchase_price: item.purchase_price,
+                    quantity: 1,
+                    sellingPrice: Math.ceil(item.purchase_price * 1.2), // Default 20% markup
+                    maxQuantity: item.quantity
+                };
+                
+                cart.push(newItem);
+                updateCartDisplay();
+            }
+        }
+        
+        function updateCartDisplay() {
+            if (cart.length === 0 && tradeIns.length === 0 && borrowedItems.length === 0) {
+                emptyCartMessage.style.display = 'block';
+                cartSummary.style.display = 'none';
+                customerInfo.style.display = 'none';
+                completeSaleBtn.disabled = true;
+                return;
+            }
+            
+            emptyCartMessage.style.display = 'none';
+            cartSummary.style.display = 'block';
+            customerInfo.style.display = 'block';
+            completeSaleBtn.disabled = false;
+            
+            // Clear current cart display
+            cartItemsList.innerHTML = '';
+            
+            // Add regular items
+            cart.forEach((item, index) => {
+                const cartItem = document.createElement('div');
+                cartItem.className = 'cart-item';
+                cartItem.innerHTML = `
+                    <div class="cart-item-details">
+                        <strong>${item.name}</strong> - ${item.category}<br>
+                        Model: ${item.model_number}
+                        ${item.imei_number ? `<br>IMEI: ${item.imei_number}` : ''}
+                    </div>
+                    <div class="cart-item-actions">
+                        <label>Qty: 
+                            <input type="number" min="1" max="${item.maxQuantity}" value="${item.quantity}"
+                                 onchange="updateCartItemQuantity(${index}, this.value)">
+                        </label>
+                        <label>Price: Rs.
+                            <input type="number" class="selling-price-input" min="${item.purchase_price}"
+                                 value="${item.sellingPrice}" step="0.01"
+                                 onchange="updateCartItemPrice(${index}, this.value)">
+                        </label>
+                        <span class="remove-item" onclick="removeFromCart(${index})">✕</span>
+                    </div>
+                `;
+                cartItemsList.appendChild(cartItem);
+            });
+            
+            // Add trade-in items
+            tradeIns.forEach((item, index) => {
+                const cartItem = document.createElement('div');
+                cartItem.className = 'cart-item trade-in-item';
+                cartItem.innerHTML = `
+                    <div class="cart-item-details">
+                        <span class="item-type-badge trade-in-badge">Trade-in</span>
+                        <strong>${item.name}</strong><br>
+                        Model: ${item.model_number}
+                        <br>IMEI: ${item.imei_number}
+                    </div>
+                    <div class="cart-item-actions">
+                        <label>Value: Rs.
+                            <input type="number" class="selling-price-input" min="0"
+                                 value="${item.trade_in_value}" step="0.01"
+                                 onchange="updateTradeInValue(${index}, this.value)">
+                        </label>
+                        <span class="remove-item" onclick="removeTradeIn(${index})">✕</span>
+                    </div>
+                `;
+                cartItemsList.appendChild(cartItem);
+            });
+            
+            // Add borrowed items
+            borrowedItems.forEach((item, index) => {
+                const cartItem = document.createElement('div');
+                cartItem.className = 'cart-item borrowed-item';
+                cartItem.innerHTML = `
+                    <div class="cart-item-details">
+                        <span class="item-type-badge borrowed-badge">Borrowed</span>
+                        <strong>${item.name}</strong> - ${item.category}<br>
+                        Model: ${item.model_number}
+                    </div>
+                    <div class="cart-item-actions">
+                        <label>Qty: 
+                            <input type="number" min="1" value="${item.quantity}"
+                                 onchange="updateBorrowedItemQuantity(${index}, this.value)">
+                        </label>
+                        <label>Cost: Rs.
+                            <input type="number" min="0" value="${item.purchase_price}" step="0.01"
+                                 onchange="updateBorrowedItemCost(${index}, this.value)">
+                        </label>
+                        <label>Price: Rs.
+                            <input type="number" min="0" value="${item.selling_price}" step="0.01"
+                                 onchange="updateBorrowedItemPrice(${index}, this.value)">
+                        </label>
+                        <span class="remove-item" onclick="removeBorrowedItem(${index})">✕</span>
+                    </div>
+                `;
+                cartItemsList.appendChild(cartItem);
+            });
+            
+            // Update total
+            updateCartTotal();
+        }
+        
+        function updateCartTotal() {
+            let total = 0;
+            
+            // Add regular items
+            cart.forEach(item => {
+                total += item.quantity * item.sellingPrice;
+            });
+            
+            // Subtract trade-in values
+            tradeIns.forEach(item => {
+                total -= parseFloat(item.trade_in_value);
+            });
+            
+            // Add borrowed items
+            borrowedItems.forEach(item => {
+                total += item.quantity * item.selling_price;
+            });
+            
+            cartTotal.textContent = `Rs.${total.toFixed(2)}`;
+        }
+        
+        function updateCartItemQuantity(index, quantity) {
+            cart[index].quantity = parseInt(quantity);
+            updateCartDisplay();
+        }
+        
+        function updateCartItemPrice(index, price) {
+            cart[index].sellingPrice = parseFloat(price);
+            updateCartDisplay();
+        }
+        
+        function removeFromCart(index) {
+            cart.splice(index, 1);
+            updateCartDisplay();
+        }
+        
+        function updateTradeInValue(index, value) {
+            tradeIns[index].trade_in_value = parseFloat(value);
+            updateCartDisplay();
+        }
+        
+        function removeTradeIn(index) {
+            tradeIns.splice(index, 1);
+            updateCartDisplay();
+        }
+        
+        function updateBorrowedItemQuantity(index, quantity) {
+            borrowedItems[index].quantity = parseInt(quantity);
+            updateCartDisplay();
+        }
+        
+        function updateBorrowedItemCost(index, cost) {
+            borrowedItems[index].purchase_price = parseFloat(cost);
+            updateCartDisplay();
+        }
+        
+        function updateBorrowedItemPrice(index, price) {
+            borrowedItems[index].selling_price = parseFloat(price);
+            updateCartDisplay();
+        }
+        
+        function removeBorrowedItem(index) {
+            borrowedItems.splice(index, 1);
+            updateCartDisplay();
+        }
+        
+        function addTradeInToTransaction() {
+            const name = document.getElementById('trade-in-name').value;
+            const model = document.getElementById('trade-in-model').value;
+            const imei = document.getElementById('trade-in-imei').value;
+            const type = document.getElementById('trade-in-type').value;
+            const price = document.getElementById('trade-in-price').value;
+            
+            if (!name || !model || !imei || !price) {
+                alert('Please fill in all required fields');
+                return;
+            }
+            
+            // Add to trade-ins array
+            const tradeIn = {
+                name: name,
+                model_number: model,
+                imei_number: imei,
+                type: type,
+                trade_in_value: parseFloat(price)
+            };
+            
+            // Send to server to validate
+            fetch('/add_trade_in', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(tradeIn)
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    tradeIns.push(tradeIn);
+                    updateCartDisplay();
+                    
+                    // Reset form and close modal
+                    document.getElementById('trade-in-name').value = '';
+                    document.getElementById('trade-in-model').value = '';
+                    document.getElementById('trade-in-imei').value = '';
+                    document.getElementById('trade-in-price').value = '';
+                    tradeInModal.style.display = 'none';
+                } else {
+                    alert('Error adding trade-in: ' + data.error);
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('An error occurred while processing the trade-in');
+            });
+        }
+        
+        function addBorrowedItemToTransaction() {
+            const name = document.getElementById('borrowed-name').value;
+            const category = document.getElementById('borrowed-category').value;
+            const model = document.getElementById('borrowed-model').value;
+            const supplier = document.getElementById('borrowed-supplier').value;
+            const cost = document.getElementById('borrowed-cost').value;
+            const selling = document.getElementById('borrowed-selling').value;
+            const quantity = document.getElementById('borrowed-quantity').value;
+            
+            if (!name || !model || !cost || !selling || !quantity) {
+                alert('Please fill in all required fields');
+                return;
+            }
+            
+            // Add to borrowed items array
+            const borrowedItem = {
+                name: name,
+                category: category,
+                model_number: model,
+                supplier: supplier,
+                purchase_price: parseFloat(cost),
+                selling_price: parseFloat(selling),
+                quantity: parseInt(quantity)
+            };
+            
+            // Send to server to validate
+            fetch('/add_borrowed_item', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(borrowedItem)
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    borrowedItems.push(borrowedItem);
+                    updateCartDisplay();
+                    
+                    // Reset form and close modal
+                    document.getElementById('borrowed-name').value = '';
+                    document.getElementById('borrowed-model').value = '';
+                    document.getElementById('borrowed-supplier').value = '';
+                    document.getElementById('borrowed-cost').value = '';
+                    document.getElementById('borrowed-selling').value = '';
+                    document.getElementById('borrowed-quantity').value = '1';
+                    borrowedItemModal.style.display = 'none';
+                } else {
+                    alert('Error adding borrowed item: ' + data.error);
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('An error occurred while processing the borrowed item');
+            });
+        }
+
+        // Function to fetch receipt data for a specific sale
+        function fetchReceiptData(saleId, customerName, customerPhone, saleDate) {
+            // Show loading indicator
+            receiptContent.innerHTML = '<div class="loading">Loading receipt data...</div>';
+            receiptModal.style.display = 'block';
+            
+            // Fetch all sales for the same customer on the same date
+            fetch(`/get_receipt_data?sale_id=${saleId}&customer=${encodeURIComponent(customerName)}&phone=${encodeURIComponent(customerPhone)}&date=${encodeURIComponent(saleDate.split(' ')[0])}`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.error) {
+                        receiptContent.innerHTML = `<div class="error">${data.error}</div>`;
+                        return;
+                    }
+
+                    // Render the receipt
+                    renderReceipt(data);
+                })
+                .catch(error => {
+                    console.error('Error fetching receipt data:', error);
+                    receiptContent.innerHTML = '<div class="error">Failed to load receipt data. Please try again.</div>';
+                });
+        }
+        
+        // Function to render the receipt with the data
+        function renderReceipt(data) {
+            const sale = data.sale;
+            const items = data.items;
+            const tradeIns = data.trade_ins;
+            const borrowedItems = data.borrowed_items;
+            
+            // Format the date
+            const saleDate = new Date(sale.sale_date);
+            const formattedDate = saleDate.toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'short',
+                day: 'numeric'
+            });
+            
+            // Calculate totals
+            let subtotal = 0;
+            items.forEach(item => {
+                subtotal += item.quantity * item.selling_price;
+            });
+            
+            borrowedItems.forEach(item => {
+                subtotal += item.quantity * item.selling_price;
+            });
+            
+            let tradeInTotal = 0;
+            tradeIns.forEach(item => {
+                tradeInTotal += parseFloat(item.trade_in_value);
+            });
+            
+            const total = subtotal - tradeInTotal;
+            
+            // Build receipt HTML
+            let receiptHTML = `
+                <div class="receipt-header">
+                    <h2>Mobile Shop</h2>
+                    <p>123 Main Street, City</p>
+                    <p>Phone: (123) 456-7890</p>
+                </div>
+                
+                <div class="receipt-info">
+                    <p><strong>Receipt #:</strong> ${sale.id}</p>
+                    <p><strong>Date:</strong> ${formattedDate}</p>
+                    <p><strong>Customer:</strong> ${sale.customer_name}</p>
+                    <p><strong>Phone:</strong> ${sale.customer_phone}</p>
+                </div>
+                
+                <div class="receipt-items">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th>Qty</th>
+                                <th>Price</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+            `;
+            
+            // Add regular items
+            items.forEach(item => {
+                const itemTotal = item.quantity * item.selling_price;
+                receiptHTML += `
+                    <tr>
+                        <td>${item.name} (${item.model_number})</td>
+                        <td>${item.quantity}</td>
+                        <td>Rs.${item.selling_price.toFixed(2)}</td>
+                        <td>Rs.${itemTotal.toFixed(2)}</td>
+                    </tr>
+                `;
+            });
+            
+            // Add borrowed items
+            borrowedItems.forEach(item => {
+                const itemTotal = item.quantity * item.selling_price;
+                receiptHTML += `
+                    <tr>
+                        <td>${item.name} (${item.model_number}) [Borrowed]</td>
+                        <td>${item.quantity}</td>
+                        <td>Rs.${item.selling_price.toFixed(2)}</td>
+                        <td>Rs.${itemTotal.toFixed(2)}</td>
+                    </tr>
+                `;
+            });
+            
+            // Add trade-ins
+            tradeIns.forEach(item => {
+                receiptHTML += `
+                    <tr class="trade-in-row">
+                        <td>Trade-in: ${item.name} (${item.model_number})</td>
+                        <td>1</td>
+                        <td>-Rs.${parseFloat(item.trade_in_value).toFixed(2)}</td>
+                        <td>-Rs.${parseFloat(item.trade_in_value).toFixed(2)}</td>
+                    </tr>
+                `;
+            });
+            
+            // Add totals
+            receiptHTML += `
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3"><strong>Subtotal:</strong></td>
+                                <td>Rs.${subtotal.toFixed(2)}</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3"><strong>Trade-in Credit:</strong></td>
+                                <td>-Rs.${tradeInTotal.toFixed(2)}</td>
+                            </tr>
+                            <tr class="total-row">
+                                <td colspan="3"><strong>Total:</strong></td>
+                                <td>Rs.${total.toFixed(2)}</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                
+                <div class="receipt-footer">
+                    <p>Thank you for your business!</p>
+                    <p>All sales are final. Warranty information provided separately.</p>
+                </div>
+            `;
+            
+            // Update the receipt content
+            receiptContent.innerHTML = receiptHTML;
+        }
+    </script>
+</body>
+</html>
+
